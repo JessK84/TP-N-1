@@ -12,132 +12,121 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
+    <header id="header">
         <div class="logo-ada">
             <img src="img/logo-tp.png" alt="logo Ada" class="img-ada">
         </div> 
         <nav class="nav">
-            <ul>
+            <ul class="cotainer-nav">
                 <li class="nav-link">Home</li>
                 <li class="nav-link">About Us</li>
                 <li class="nav-link">Services</li>
                 <li class="nav-link">Portfolio</li>
                 <li class="nav-link">Team</li>
                 <li class="nav-link">Drop Down <i class="fas fa-sort-down"></i></li>
-                    <!--<ul class="container-second">
-                        <li class="sub-nav">Drop Down 1
-                            <ul class="sub-container">
-                                <li class="sub-submenu">Deep Drop Down</li>
-                                <li class="sub-submenu">Deep Drop Down </li>
-                                <li class="sub-submenu">Deep Drop Down</li>
-                            </ul>
-                        </li>
+                  <!--  <ul class="subcontainer-nav">
+                        <li class="sub-nav">Drop Down 1</li>
                         <li class="sub-nav">Drop Down 2
-                        <ul class="sub-container">
-                            <li class="sub-subnav">Deep Drop Down</li>
-                            <li class="sub-subnav">Deep Drop Down <i class="fas fa-chevron-right"></i></li>
-                            <li class="sub-subnav">Deep Drop Down</li>
-                        </ul>
-                    </li>
-                    <li class="sub-nav">Drop Down 3
-                        <ul class="sub-container">
-                            <li class="sub-submenu">Deep Drop Down</li>
-                            <li class="sub-submenu">Deep Drop Down</li>
-                            <li class="sub-submenu">Deep Drop Down</li>
-                        </ul>
-                    </li>
-                    <li class="sub-nav">Drop Down 4
-                        <ul class="sub-container">
-                            <li class="sub-submenu">Deep Drop Down</li>
-                            <li class="sub-submenu">Deep Drop Down</li>
-                            <li class="sub-submenu">Deep Drop Down</li>
-                        </ul>
-                    </li>
-                </ul> -->
+                        <li class="sub-nav">Drop Down 3
+                        <li class="sub-nav">Drop Down 4
+                    </ul> -->
                 <li class="nav-link">Contact Us</li>
             </ul>
         </nav>
     </header>
+
+    <!--
+                                    <ul class="sub-subcontainer-nav">
+                                <li class="sub-subnav-link">Deep Drop Down</li>
+                                <li class="sub-subnav-link">Deep Drop Down </li>
+                                <li class="sub-subnav-link">Deep Drop Down</li>
+                                <li class="sub-subnav-link">Deep Drop Down</li>
+                            </ul>
+    -->
     <main>
-        <section class="section-container">
-            <div class="main-title">
-                <h1>We provide solutions for your business!</h1>
-            </div>
-            <div class="main-button">
-                <button>Get Started</button>
-                <button>Our Services</button>
-            </div>
+        <section class="home-container">
+            <div class="home-section">
+                <div class="main-title">
+                    <h1>We provide <br> <span id="solution"> solutions</span> <br> for your business!</h1>
+                </div>
+                <div class="main-button">
+                    <button class="home-button">Get Started</button>
+                    <button class="home-button" id="">Our Services</button>
+                </div>
+            </div>    
             <div class="img-section">
-                <img src="img/intro-img.svg" alt="Ada">
+                <img src="img/intro-img.svg" alt="Ada" class="img-home">
             </div>
         </section>
-        <section class="section-container">
-            <div class="section-title">
+        <section class="about-container">
+            <header class="section-title">
                 <h2>About Us</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore e dolore magna aliqua.</p>
+            </header>
+            <div class="sub-container" >
+                <div class="about">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>             
+                    <div class="about-container">
+                        <div class="about-description">
+                            <div class="about-button">
+                                <button><i class="fas fa-shopping-bag"></i></button>
+                            </div>
+                            <div class="about-text">
+                                <h3>Eiusmod Tempor</h3>
+                                <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis esteligendi</p>
+                            </div>
+                        </div>
+                        <div class="about-description">
+                            <div class="about-button">
+                                <button><i class="fas fa-image"></i></button>
+                            </div>
+                            <div class="about-text">
+                                <h3>Magni Dolores</h3>
+                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                            </div>
+                        </div>
+                        <div class="about-description">
+                            <div class="about-button">
+                                <button><i class="fas fa-chart-bar"></i></button>
+                            </div>
+                            <div class="about-text">
+                                <h3>Dolor Sitema</h3>
+                                <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+                            </div>
+                        </div>  
+                    </div>   
+                </div>  
+                <div class="img-section">
+                    <img src="img/about-img.svg" alt="Ada" class="img-home">
+                </div>   
             </div>
-            <div class="about">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
-            <div class="about-container">
-                <div class="about-description">
-                    <div class="about-button">
-                        <button><i class="fas fa-shopping-bag"></i></button>
-                    </div>
-                    <div class="about-text">
-                        <h3>Eiusmod Tempor</h3>
-                        <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis esteligendi</p>
-                    </div>
+            <div class="sub-container">
+                <div class="img-section">
+                    <img src="img/about-extra-1.svg" alt="Ada" class="img-home">
                 </div>
-                <div class="about-description">
-                    <div class="about-button">
-                        <button><i class="fas fa-image"></i></button>
-                    </div>
-                    <div class="about-text">
-                        <h3>Magni Dolores</h3>
-                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                    </div>
-                </div>
-                <div class="about-description">
-                    <div class="about-button">
-                        <button><i class="fas fa-chart-bar"></i></button>
-                    </div>
-                    <div class="about-text">
-                        <h3>Dolor Sitema</h3>
-                        <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
-                    </div>
-                </div>        
-            </div>
-        </section>    
-        <section class="section-container">
-            <div class="img-section">
-                <img src="img/about-extra-1.svg" alt="Ada">
-                </div>
-            <div class="section-title"> 
-                <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
-                <p>Ipsum in aspernatur ut possimus sint. Quia omnis est occaecati possimus ea. Quas molestiae perspiciatis occaecati qui rerum. Deleniti quod porro sed quisquam saepe. Numquam mollitia recusandae non ad at et a.</p>
-                <p> Ad vitae recusandae odit possimus. Quaerat cum ipsum corrupti. Odit qui asperiores ea corporis deserunt veritatis quidem expedita perferendis. Qui rerum eligendi ex doloribus quia sit. Porro rerum eum eum.</p>     
+                <div class="section-title"> 
+                    <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+                    <p>Ipsum in aspernatur ut possimus sint. Quia omnis est occaecati possimus ea. Quas molestiae perspiciatis occaecati qui rerum. Deleniti quod porro sed quisquam saepe. Numquam mollitia recusandae non ad at et a.</p>
+                    <p> Ad vitae recusandae odit possimus. Quaerat cum ipsum corrupti. Odit qui asperiores ea corporis deserunt veritatis quidem expedita perferendis. Qui rerum eligendi ex doloribus quia sit. Porro rerum eum eum.</p>     
                 </div>
             </div>
-        </section>
-        <section class="section-container">
-            <div class="section-title"> 
+            <div class="sub-container">
+                <div class="section-title"> 
                     <h3>Neque saepe temporibus repellat ea ipsum et. Id vel et quia tempora facere reprehenderit.</h3>
                     <p>electus alias ut incidunt delectus nam placeat in consequatur. Sed cupiditate quia ea quis. Voluptas nemo qui aut distinctio. Cumque fugit earum est quam officiis numquam. Ducimus corporis autem at blanditiis beatae incidunt sunt.</p>
                     <p> Voluptas saepe natus quidem blanditiis. Non sunt impedit voluptas mollitia beatae. Qui esse molestias. Laudantium libero nisi vitae debitis. Dolorem cupiditate est perferendis iusto.</p>     
                     <p>Eum quia in. Magni quas ipsum a. Quis ex voluptatem inventore sint quia modi. Numquam est aut fuga mollitia exercitationem nam accusantium provident quia.</p>
                 </div>
                 <div class="img-section">
-                    <img src="img/about-extra-2.svg" alt="Ada">
+                    <img src="img/about-extra-2.svg" alt="Ada" class="img-home">
                 </div>
             </div>
-        </section>
+        </section>    
         <section class="section-container" >
-            <div class="section-title">
+            <header class="section-title">
                 <h2>Services</h2>
                 <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus.</p>
-            </div>
+            </header>
             <div class="card-services">
                 <i class="fas fa-spinner"></i>
                 <h4>Lorem Ipsum </h4>
@@ -170,10 +159,10 @@
             </div>
         </section>
         <section class="section-container">
-            <div class="section-title">   
+            <header class="section-title">   
                 <h2>Why choose us?</h2>
                 <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus.</p>
-            </div>    
+            </hader>    
             <div class="card-servieces-second">
                 <div  class="card-choose">
                     <i class="far fa-gem"></i>
@@ -196,9 +185,9 @@
             </div>
         </section>
         <section class="section-container">
-            <div class  class="section-title">
+            <header class  class="section-title">
                 <h2>Our Portfolio</h2>
-            </div>
+            </header>
             <div class="button-porfolio">
                 <button>ALL</button>
                 <button>APP</button>
@@ -218,10 +207,10 @@
             </div>
         </section>
         <section class="section-container">
-            <div class="section-title">
+            <header class="section-title">
                 <h2>Testimonials</h2>
-            </div>
-            <div class="testiomonial-card">
+            </header>
+            <article class="testiomonial-card">
                 <div class="img-testimonial"> 
                     <img src="img/testimonial-1.jpg" alt="">
                 </div>
@@ -232,8 +221,8 @@
                         <p>Laudem latine abhorreant vituperatori bus persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus.</p>
                     </div>
                 </div>
-            </div>
-            <div class="testiomonial-card">
+            </article>
+            <article class="testiomonial-card">
                 <div class="img-testimonial"> 
                     <img src="img/testimonial-2.jpg" alt="">
                 </div>
@@ -244,8 +233,8 @@
                         <p>Lorem ipsum dolor sit quod unde sunt sequi quisquam, vel numquam quaerat non enim porro vero mollitia debitis laborum!</p>
                     </div>
                 </div>
-            </div>
-            <div class="testiomonial-card">
+            </article>
+            <article class="testiomonial-card">
                 <div class="img-testimonial"> 
                     <img src="img/testimonial-3.jpg" alt="">
                 </div>
@@ -256,8 +245,8 @@
                         <p>Provident obcaecati ea odio dolores vero eaque quae quia explicabo quod temporibus dolorem porro suscipit sint pariatur consequuntur?</p>
                     </div>
                 </div>
-            </div>
-            <div class="testiomonial-card">
+            </article>
+            <article class="testiomonial-card">
                 <div class="img-testimonial"> 
                     <img src="img/testimonial-4.jpg" alt="">
                 </div>
@@ -268,8 +257,8 @@
                         <p>Fugit consequatur neque commodi dolores quod et asperiores, sed, hic omnis, corrupti molestias? Dolorem quos natus facere nisi! Ullam. </p>
                     </div>
                 </div>
-            </div>
-            <div class="testiomonial-card">
+            </article>
+            <article class="testiomonial-card">
                 <div class="img-testimonial"> 
                     <img src="img/testimonial-5.jpg" alt="">
                 </div>
@@ -280,7 +269,7 @@
                         <p>Dolor sit amet consectetur adipisicing elit. Doloremque, qui. Quam nobis, quo voluptate ipsam error eius nam, unde necessitatibus neque pariatur tempora nesciunt sint id voluptatem itaque numquam excepturi. </p>
                     </div>
                 </div>
-            </div>
+            </article>
             <div class="button-testimonial">
                 <button></button>
                 <button></button>
@@ -290,10 +279,10 @@
             </div>
         </section>
         <section  class="section-contanier">
-            <div class="section-title">
+            <header class="section-title">
                 <h2>Team</h2>
                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
-            </div>
+            </header>
             <div class="img-team">
                 <img src="img/team-01.jpg" alt="">
                 <img src="img/team-02.jpg" alt="">
@@ -302,10 +291,10 @@
             </div>
         </section>
         <section class="section-container">
-            <div class="section-title">
+            <header class="section-title">
                 <h2>Our Clients</h2>
                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque dere santome nida.</p>
-            </div>
+            </header>
             <div class="img-clients">
                 <div class="container-clients">
                     <img src="img/clients/client-1.png" alt="">
@@ -334,9 +323,9 @@
             </div>
         </section>
         <section class="section-container">
-            <div class="section-title">
+            <header class="section-title">
                 <h2>Contact Us</h2>
-            </div>
+            </header>
             <div class="map-contact">
         <!--    FALTA MAPA -->
             </div>
