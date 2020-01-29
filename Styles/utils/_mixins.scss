@@ -7,5 +7,16 @@
     
 .section-cotainer {
     @include section-container($background)
- 
+ @mixin sub-titles-sections ($secundary-color) {
+    text-align: center;
+    margin: auto;
+    font-size: 15px;
+    padding-bottom: 60px;
+    color: $color-sub-title;
+    width: 40%;
+    font-family:$main-text;
+    line-height: 25px;
+}
+
 }*/
+
