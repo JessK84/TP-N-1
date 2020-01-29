@@ -60,3 +60,46 @@
     }
 }
 }
+
+.button-portfolio {
+    text-align: center;
+    margin: 0px auto;
+    button {
+    width: 70px;
+    height: 38px;
+    border-radius: 30px;
+    border: 1px solid $nav-color;
+    margin: 8px;
+    font-family: $main-text;
+    color: white;
+    background-color:$nav-color;
+        &:nth-child(+2){
+            background-color:$secundary-color; 
+            border: 1px solid $secundary-color;
+            color: $nav-color;
+            &:hover {
+                color: white;
+                background-color:$nav-color;
+            }
+    }
+        &:nth-child(+3){
+            background-color:$secundary-color; 
+            border: 1px solid $secundary-color;
+            color: $nav-color;
+            transition: .8s all;
+            &:hover {
+                color: white;
+                background-color:$nav-color;
+            }
+    }
+        &:nth-child(+4){
+            background-color:$secundary-color; 
+            border: 1px solid $secundary-color;
+            color: $nav-color; 
+            &:hover {
+                color: white;
+                background-color:$nav-color;
+            }
+        }
+    }
+}
