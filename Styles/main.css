@@ -1,53 +1,80 @@
-/*@mixin section-container ($background){
-    position: relative;
-    margin: 0px auto;
-    display: flex;
-    background-color: $background;
-}
-    
-.section-cotainer {
-    @include section-container($background)
- @mixin sub-titles-sections ($secundary-color) {
-    text-align: center;
-    margin: auto;
-    font-size: 15px;
-    padding-bottom: 60px;
-    color: $color-sub-title;
-    width: 40%;
-    font-family:$main-text;
-    line-height: 25px;
-}
+.section-title .title {
+  font-size: 36px;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-weight: bold;
+  position: relative;
+  margin: 60px auto 0px;
+  padding: 60px 10px 0px; }
+.section-title:nth-child(+2) {
+  color: red; }
+.section-title .subtitle {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 15px;
+  padding-top: 25px;
+  padding-bottom: 70px;
+  color: #556877;
+  width: 40%;
+  font-family: "Open Sans", sans-serif;
+  line-height: 25px;
+  letter-spacing: 0.8px; }
 
-}*/
+.home-button {
+  background-color: #1445B3;
+  border: 2px solid #1445B3;
+  transition: .3s all;
+  color: #ECF5FF; }
+  .home-button#services {
+    background-color: #1445b3;
+    border: 2px solid #ecf5ff;
+    color: #ecf5ff;
+    transition: .3s all; }
+    .home-button#services:hover {
+      background-color: #007bff;
+      border: 2px solid #007bff;
+      color: #ecf5ff;
+      transition: .3s all; }
+
+.card-services {
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  text-align: left;
+  padding: 15px 0px 15px; }
+  .card-services h4 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px; }
+  .card-services h4:hover {
+    color: #007bff; }
+  .card-services i:nth-child(1) {
+    color: purple; }
+  .card-services i:nth-child(2) {
+    color: yellow; }
+
 .main-button {
   display: flex;
   flex-direction: row; }
   .main-button .home-button {
-    width: 170px;
+    width: 180px;
     height: 45px;
-    border: 1px solid;
-    margin-left: 20px;
+    border: 2px solid;
+    margin-left: 15px;
     border-radius: 25px;
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
     font-size: 15px;
     letter-spacing: 2px;
-    padding: 10px;
-    margin-top: 3px;
-    margin-bottom: 3px; }
-    .main-button .home-button {
+    padding: 10px; }
+    .main-button .home-button#started {
       background-color: #007bff;
       border: 1px solid #007bff;
       color: #ecf5ff;
       transition: .3s all; }
-      .main-button .home-button:hover {
+      .main-button .home-button#started:hover {
         background-color: #1445b3;
         border: 2px solid #ecf5ff; }
-        .main-button .home-button:hover:nth-child(+2) {
-          background-color: red;
-          border: 1px solid #007bff;
-          color: #ecf5ff;
-          transition: .3s all; }
 
 .about-description {
   display: flex;
@@ -68,6 +95,14 @@
       right: 18px;
       color: #007bff; }
 
+.about-button:hover button {
+  background-color: #007bff;
+  border: 2px solid #007bff;
+  transition: .5s all; }
+  .about-button:hover button i {
+    color: white;
+    transition: .5s all; }
+
 html,
 body {
   margin: 0px auto; }
@@ -83,7 +118,7 @@ body {
   background-color: #1445b3;
   height: 400px; }
   .home-container .img-home {
-    width: 650px; }
+    width: 630px; }
 
 .home-section {
   display: flex;
@@ -111,13 +146,13 @@ body {
   .about-container .sub-container {
     padding: 70px 100px;
     display: flex;
-    flex-direction: row;
-    box-sizing: border-box; }
+    flex-direction: row; }
     .about-container .sub-container .about-text {
       font-size: 15px; }
     .about-container .sub-container .img-home {
-      width: 630px;
-      margin: 0px 15px; }
+      width: 550px;
+      margin: 0px 15px;
+      padding-top: 10px; }
 
 .services-container {
   background-color: #ecf5ff;
@@ -133,18 +168,76 @@ body {
       display: flex;
       flex-direction: column;
       background-color: white;
-      width: 400px;
-      height: 150px;
+      width: 390px;
+      height: 140px;
       padding: 30px 30px 30px 60px;
       margin: 30px;
-      border: 1px solid black;
+      box-shadow: 5px 5px 5px #dfdfdf;
       position: relative;
-      overflow: hidden; }
+      overflow: hidden;
+      border-radius: 10px; }
       .services-container .section-wrap .card-services i {
         position: absolute;
-        top: 100px;
+        top: 80px;
         left: -20px;
-        font-size: 50px; }
+        font-size: 55px; }
+
+.why-container {
+  background-color: #004a99;
+  margin: 0px auto;
+  padding: 0px 80px;
+  height: 700px; }
+  .why-container .card-servieces-second {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0px auto; }
+    .why-container .card-servieces-second .card-choose {
+      margin: 0px auto;
+      width: 300px;
+      height: 280px;
+      padding: 20px;
+      background-color: #00428A;
+      color: white;
+      border: 1px solid #00428A;
+      border-radius: 7px;
+      text-align: center;
+      color: white;
+      font-size: 20px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: bolder; }
+      .why-container .card-servieces-second .card-choose .why-text {
+        color: #d8eafe;
+        font-size: 16px;
+        font-weight: 200;
+        line-height: 22px; }
+      .why-container .card-servieces-second .card-choose a {
+        text-decoration: none;
+        color: white;
+        font-family: "Montserrat", sans-serif;
+        font-size: 16px;
+        letter-spacing: .8px; }
+      .why-container .card-servieces-second .card-choose i {
+        font-size: 50px;
+        padding-bottom: 20px;
+        color: #d8eafe;
+        padding-top: 10px; }
+        .why-container .card-servieces-second .card-choose i .why-text {
+          color: #d8eafe;
+          font-size: 40px; }
+
+.portfolio-container {
+  margin: 0px auto; }
+  .portfolio-container .wrap-portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 450px;
+    height: 280px; }
+    .portfolio-container .wrap-portfolio .img-portfolio {
+      width: 450px;
+      height: 280px; }
 
 #header {
   display: flex;
