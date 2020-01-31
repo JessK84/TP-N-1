@@ -24,13 +24,10 @@
 .section-title {
     .title {   
     @include titles-sections(#283D50)}
-
-    &:nth-child(+2) {
-        color: red
-    }
-    
+ 
     .subtitle {
     @include sub-titles-sections (#283D50)}
+  
 }
 
 
@@ -69,10 +66,11 @@
         font-size: 18px;
         font-weight: 700;
         margin-bottom: 15px;
+            &:hover{
+                color: $nav-color;
     }
-    h4:hover{
-        color: $nav-color;
     }
+   
     i:nth-child(1){
         color: purple;
     }

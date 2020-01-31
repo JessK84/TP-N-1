@@ -63,7 +63,7 @@
 
 .button-portfolio {
     text-align: center;
-    margin: 0px auto;
+    margin: 30px auto 50px;
     button {
     width: 70px;
     height: 38px;
@@ -101,5 +101,23 @@
                 background-color:$nav-color;
             }
         }
+    }
+}
+
+.button-testimonial {
+    text-align: center;
+    button {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    border: none;
+    margin: 4px;
+    background-color: #ddd;
+    cursor: pointer;
+        &:hover {
+            background-color: $nav-color;
+        }
+
+
     }
 }
