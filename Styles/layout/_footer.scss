@@ -68,16 +68,17 @@ footer {
                     ul {
                         display: flex;
                         flex-direction: row;   
-                        justify-content: space-around;
+                        justify-content: space-between;
                         font-size: 130px;
                         position: relative;
                         bottom: 80px;
                         left: 30px;
                         li {
                             color: $nav-color;
+                            margin-left: 18px;
                         }                   
                          i {
-                             font-size: 20px;
+                             font-size: 18px;
                              color: white;
                              position: relative;
                              top: -35px;

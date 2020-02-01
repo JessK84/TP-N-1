@@ -30,17 +30,18 @@
 .about-description {
     display: flex;
     flex-direction: row;
+    margin: 0px;
     button {
     background-color: white;
-    width: 70px;
-    height: 70px;
+    width: 65px;
+    height: 65px;
     border-radius: 50%;
     padding-left: 25px;
     position: relative;
     margin: 20px 15px;
     border: 2px solid $nav-color;
        i {
-        font-size: 30px;
+        font-size: 26px;
         position: absolute;
         top: 18px;
         right: 18px;
