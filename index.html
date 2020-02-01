@@ -210,23 +210,23 @@
         </section>
         <section class="testimonial-container">
             <header class="section-title">
-                <h2 class="title">Testimonials</h2 c>
+                <h2 class="title">Testimonials</h2>
             </header>
             <article class="testiomonial-card">
                 <div class="testimonial"> 
                     <img src="img/testimonial-1.jpg" alt="" class="img-testimonial">
                 </div>
                 <div>
-                    <div class="info-textimonial">
+                    <div class="info-testimonial">
                         <h3>Saul Goodman</h3>
                         <h4>Ceo & Fonder</h4>
                         <p> Laudem latine abhorreant vituperatori bus persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
                     </div>
                 </div>
-            </article> <!--
-            <article class="testiomonial-card">
+            </article> 
+            <article class="testiomonial-card slider">
                 <div class="testimonial"> 
-                    <img src="img/testimonial-2.jpg" alt="" class= img-testimonial>
+                    <img src="img/testimonial-2.jpg" alt="" class= "img-testimonial sara">
                 </div>
                 <div>
                      <div class="info-textimonial">
@@ -236,9 +236,9 @@
                     </div>
                 </div>
             </article>
-            <article class="testiomonial-card">
+            <article class="testiomonial-card slider">
                 <div class="img-testimonial"> 
-                    <img src="img/testimonial-3.jpg" alt="" class= img-testimonial>
+                    <img src="img/testimonial-3.jpg" alt="" class= "img-testimonial jenna">
                 </div>
                 <div>
                     <div class="textimonial">
@@ -248,9 +248,9 @@
                     </div>
                 </div>
             </article>
-            <article class="testiomonial-card">
+            <article class="testiomonial-card slider">
                 <div class="img-testimonial"> 
-                    <img src="img/testimonial-4.jpg" alt="" class= img-testimonial>
+                    <img src="img/testimonial-4.jpg" alt="" class= "img-testimonial marlon">
                 </div>
                 <div>
                     <div class="textimonial">
@@ -260,9 +260,9 @@
                     </div>
                 </div>
             </article>
-            <article class="testiomonial-card">
+            <article class="testiomonial-card slider">
                 <div class="img-testimonial"> 
-                    <img src="img/testimonial-5.jpg" alt="" class= img-testimonial>
+                    <img src="img/testimonial-5.jpg" alt="" class= "img-testimonial john">
                 </div>
                 <div>
                     <div class="textimonial">
@@ -271,13 +271,13 @@
                         <p>Dolor sit amet consectetur adipisicing elit. Doloremque, qui. Quam nobis, quo voluptate ipsam error eius nam, unde necessitatibus neque pariatur tempora nesciunt sint id voluptatem itaque numquam excepturi. </p>
                     </div>
                 </div>
-            </article>-->
+            </article>
             <div class="button-testimonial">
                 <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
+                <button class="btn-one"></button>
+                <button class="btn-two"></button>
+                <button class="btn-three"></button>
+                <button class="btn-four"></button>
             </div>
         </section>
         <section  class="team-contanier">
@@ -328,83 +328,85 @@
             <header class="section-title">
                 <h2 class="title">Contact Us</h2>
             </header>
-            <div class="info-cotainer">
-                <div class="map-contact">
-            <!--    FALTA MAPA -->
-                </div>
-            
+
+            <div class="info-container">
+                <div class="map-contact"> <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d24194.866499591502!2d-74.006227!3d40.710128!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1ses!2sbg!4v1580557582667!5m2!1ses!2sbg" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+               </div>          
                 <div class="info-contact">
-                    <div class="contact-us">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <p>A108 Adam Street, NY 535022</p>
+                    <div class="contact-address">
+                        <div class="contact-us">
+                            <p> <i class="fas fa-map-marker-alt"></i>A108 Adam Street, NY 535022</p>
+                        </div>
+                        <div class="contact-us">
+                            <p> <i class="far fa-envelope"></i>info@example.com</p>
+                        </div>
+                        <div class="contact-us">
+                            <p><i class="fas fa-phone"></i>+1 5589 55488 55</p>
+                        </div>
                     </div>
-                    <div class="contact-us">
-                        <i class="far fa-envelope"></i>
-                        <p>info@example.com</p>
-                    </div>
-                    <div class="contact-us">
-                        <i class="fas fa-phone"></i>
-                        <p>+1 5589 55488 55</p>
-                    </div>
-                </div>
-                <form action="">
-                    <div class="info-form">
-                        <input type="text" placeholder="Your Name">
-                        <input type="email" placeholder="Your Email">
-                    </div>
-                    <div class="info-form">
-                        <input type="text" placeholder="Subject">
-                    </div>
-                    <div class="info-form">
-                        <textarea name="Mesage" id=""  required cols="30" rows="10">Message</textarea>
-                    </div>
-                </form>
-                <button>Send Message</button>
-            </div>    
+                    <form action="">
+                        <div class="info-form">
+                            <input type="text" placeholder="Your Name">
+                            <input type="email" placeholder="Your Email">
+                        </div>
+                        <div class="info-form">
+                            <input type="text" placeholder="Subject" id="subjet">
+                        </div>
+                        <div class="info-form">
+                            <textarea name="Mesage" id="mesaje"  required cols="30" rows="10">Message</textarea>
+                        </div>
+                    </form>
+                    <button class="btn-message">Send Message</button>
+                </div>    
+            </div>  
         </section>
     </main>
     <footer>
-        <div class="info-footer">
-            <h4>WAYNE</h4>
-            <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
-        </div>
-        <div class="detail-footer">
-            <h4>USEFUL LINKS</h4>
-            <nav>
-                <ul>
-                    <li>Home</li>
-                    <li>About Us</li>
-                    <li>Services</li>
-                    <li>Terms of service</li>
-                    <li>Privacy policy</li>
-                </ul>
-            </nav>
-        </div>
-        <div class="detail-footer">
-            <h4>CONTACT US</h4>
-            <p>A108 Adam Street</p>
-            <p>New York, NY 535022</p>
-            <p>United States</p>
-            <p><span>Phone: </span> +1 5589 55488 55</p>
-            <p><span> Email: </span>info@example.com</p>
-            <div class="social-media">
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-facebook"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-google-plus-g"></i>
-                <i class="fab fa-linkedin-in"></i>
+        <section class="footer-container">
+            <div class="info-footer">
+                <h4>WAYNE</h4>
+                <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
             </div>
-        </div>
-        <div class="detail-footer">
-            <h4>OUR NEWSLETTER</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore legam minim quorum culpa amet magna export quem marada parida nodela caramase seza.</p>
-        </div>
-        <form action="">
-            <input type="email">
-            <input type="submit" value="Subsicribe "> 
-        </form>
+            <div class="nav-footer">
+                <h4>USEFUL LINKS</h4>
+                <nav>
+                    <ul>
+                        <li>Home</li>
+                        <li>About Us</li>
+                        <li>Services</li>
+                        <li>Terms of service</li>
+                        <li>Privacy policy</li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="detail-footer">
+                <h4>CONTACT US</h4>
+                <p>A108 Adam Street</p>
+                <p>New York, NY 535022</p>
+                <p>United States</p>
+                <p><strong>Phone: </strong> +1 5589 55488 55</p>
+                <p><strong> Email: </strong>info@example.com</p>
+                <div class="social-media">
+                    <ul>
+                        <li><i class="fab fa-twitter"></i></li>
+                        <li> <i class="fab fa-facebook-f"></i></li>
+                        <li><i class="fab fa-instagram"></i></li>
+                        <li> <i class="fab fa-google-plus-g"></i></li>
+                        <li><i class="fab fa-linkedin-in"></i></li>
+                    </ul>                
+                </div>
+            </div>
+            <div class="newsletter-footer">
+                <h4>OUR NEWSLETTER</h4>
+                <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore legam minim quorum culpa amet magna export quem marada parida nodela caramase seza.</p>         
+                <form action="">
+                    <input type="email" class="input-footer">
+                    <input type="submit" value="Subsicribe " class="btn-footer"> 
+                </form>
+            </div>
+        </section>    
         <div class="copyright-footer">
-            <p>© Copyright <span> Wayne Enterprises.</span> All Rights Reserved</p>
+            <p>© Copyright <strong> Wayne Enterprises.</strong> All Rights Reserved</p>
             <p>Designed by ...</p> 
         </div>
     </footer>

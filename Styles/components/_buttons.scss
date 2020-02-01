@@ -112,12 +112,53 @@
     border-radius: 50%;
     border: none;
     margin: 4px;
-    background-color: #ddd;
+    background-color: $nav-color;
     cursor: pointer;
-        &:hover {
-            background-color: $nav-color;
-        }
+        &:nth-child(+2){
+            background-color: #ddd;
+            &:hover .sara {
+                background-color: $nav-color;
+            }
+        }        
+    }
+}
 
+.btn-message {
+    width: 190px;
+    height: 45px;
+    padding: 5px;
+    border-radius: 30px;
+    background-color: $nav-color;
+    border: 1px solid $nav-color;
+    color: white;
+    font-family: $main-title;
+    font-size: 16px;
+    margin-bottom: 50px;
+    &:hover {
+        background-color: #046bda;
+        border: 1px solid #046bda;
+    }
+}
 
+.newsletter-footer {
+    position: relative;
+    .input-footer {
+        border: none;
+        height: 32px;
+        width: 200px;
+        position: absolute;
+        top: 235px;
+        left: 0px;
+    }
+    .btn-footer {
+        width: 100px;
+        height: 34px;
+        border: 1px solid $nav-color;
+        background-color: $nav-color;
+        color: white;
+        font-size: 15px;
+        position: absolute;
+        top: 235px;
+        left: 200px;
     }
 }

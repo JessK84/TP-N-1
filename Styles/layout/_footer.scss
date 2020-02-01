@@ -1,0 +1,107 @@
+footer {
+    margin: 0px auto;
+    background-color: $terciary-background;
+    color: white;
+    .copyright-footer {
+        background-color: $secundary-background;
+        margin: 0px auto;
+        text-align: center;
+        padding: 25px;
+        line-height: 8px;
+        font-family: $main-text;
+        letter-spacing: 1px;
+        font-weight: 200;
+        font-size: 16px;
+    }
+    .footer-container {
+        margin: 0px auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0px 40px;
+        .info-footer {
+            font-family: $main-title;
+            width: 420px;
+            height: 350px;
+            h4 {
+                font-size: 40px;
+                font-weight: 200;
+                line-height: 3px;
+            }
+            p{
+                font-size: 15px;
+                font-weight: 100;
+                line-height: 25px;
+                color: #ECF5FF;
+            }
+        }     
+        .nav-footer {
+            font-family: $main-title;
+            font-size: 14px;
+            text-align: left;
+            width: 270px;
+            margin-top: 30px;
+            height: 350px;
+            h4{
+                margin-left: 40px;
+                font-size: 15px;
+            }
+            ul {
+                list-style: none;
+                margin: 0px;
+                line-height: 35px;
+                font-size: 15px;
+            }
+        }
+            .detail-footer {
+                font-family: $main-title;
+                font-size: 14px;
+                text-align: left;
+                width: 300px;
+                height: 350px;
+                margin-top: 30px;
+                line-height: 14px;
+                h4{
+                    margin-bottom: 38px;
+                }
+                .social-media{                  
+                    ul {
+                        display: flex;
+                        flex-direction: row;   
+                        justify-content: space-around;
+                        font-size: 130px;
+                        position: relative;
+                        bottom: 80px;
+                        left: 30px;
+                        li {
+                            color: $nav-color;
+                        }                   
+                         i {
+                             font-size: 20px;
+                             color: white;
+                             position: relative;
+                             top: -35px;
+                             right: 80px;
+                         }                   
+                    }
+                }
+            }
+            .newsletter-footer{
+                font-family: $main-title;
+                font-size: 14px;
+                text-align: left;
+                width: 350px;
+                height: 350px;
+                margin-top: 30px;
+                h4{
+                    margin-bottom: 30px;
+                }
+                p{
+                    line-height: 20px;
+                    font-size: 15px;
+                    padding-right: 40px;
+                    margin-bottom: 70px;
+                }            
+           }
+    }
+}

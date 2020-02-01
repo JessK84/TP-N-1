@@ -207,12 +207,58 @@ body {
     }
 }
 
-.contact-container {
-    margin: 0px auto;
+.contact-container{
+    margin: 0px 20px;
+    font-family: $main-text;
+    color:rgb(75, 75, 75);
+    box-sizing: border-box;
+    text-align: center;
     .info-container{
-    display: flex;
-    flex-direction: row;
-    }
+        margin: 20px auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: stretch;
+        .contact-address {
+            display: flex;
+            flex-direction: row;
+            .contact-us {
+                margin-left: 4px;
+            i {
+                color: $nav-color;
+                font-size: 26px;
+                margin: 0px 15px;
+            }
+        }
+    } 
+            .map-contact{
+                margin: 20px;
+                iframe {
+                    width: 620px;
+                    height: 350px;
+                }
+            }
+            form {
+                margin: 15px;
+                     textarea {
+                        width: 638px;
+                        margin: 5px;
+                        padding: 10px;
+                        border: 0.5px solid rgb(218, 212, 212);     
+                        font-family: $main-text;
+                        color: #4b4b4b;    
+                        font-size: 14px;   
+                    }
+                    input {
+                        width: 300px;
+                        margin: 5px;
+                        padding: 10px;
+                        border: 0.5px solid rgb(218, 212, 212);
+                        &#subjet {
+                            width: 638px;
+                        }                  
+                    }          
+            }
+    }   
 }
 
 .testimonial-container {
@@ -220,12 +266,16 @@ body {
     height: 430px;
     background-color: #ecf5ff;
     font-family: $main-title;
+    
     .testiomonial-card {
         margin: 30px auto;
         width: 800px;
         display: flex;
         flex-direction: row;
         justify-content: center;
+        &.slider {
+            display: none;
+        }
             h3 {
         font-size: 22px;
         font-weight: bolder;;
@@ -254,3 +304,4 @@ body {
             }
         }    
     }
+
