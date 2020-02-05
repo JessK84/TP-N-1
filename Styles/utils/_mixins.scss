@@ -1,33 +1,42 @@
 
-@mixin titles-sections ($secundary-color){
+@mixin titles-sections ($letter-title-color){
     font-size:$main-size;
     font-family: $main-title;
     text-align: center;
     font-weight: bold;
     position: relative;
     margin: 0px auto;
-    padding: 60px 10px 0px;
+    padding: 0px 10px 0px;
+    color: $letter-title-color;
+   
 }
-@mixin sub-titles-sections ($secundary-color) {
+
+@mixin sub-titles-sections ($letter-subtitle-color) {
     text-align: center;
     margin:0 auto;
     font-size: 15px;
     padding-top: 25px;
-    padding-bottom:70px;
+    padding-bottom:50px;
     color: $letter-subtitle-color;
-    width: 40%;
+    width: 600px;
     font-family:$main-text;
-    line-height: 25px;
+    line-height: 22px;
     letter-spacing: 0.8px;
 }
 
 .section-title {
     .title {   
-    @include titles-sections(#283D50)}
- 
+    @include titles-sections($letter-title-color)} 
     .subtitle {
-    @include sub-titles-sections (#283D50)}
-  
+    @include sub-titles-sections ($letter-subtitle-color)}
+}
+ .why-container {
+    .section-title {
+        .title {   
+        @include titles-sections(white)} 
+        .subtitle {
+        @include sub-titles-sections (white)}
+    }
 }
 
 
@@ -40,7 +49,7 @@
     font-size: 14px;
     font-family: $main-text;
     text-align: left;
-    padding: 15px 0px 15px;
+    padding: 15px 10px 15px;
     
 }
 .home-button {
@@ -66,9 +75,7 @@
         font-size: 18px;
         font-weight: 700;
         margin-bottom: 15px;
-            &:hover{
-                color: $nav-color;
-    }
+      
     }
    
     i:nth-child(+1){

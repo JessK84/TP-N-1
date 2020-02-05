@@ -5,17 +5,39 @@
   font-weight: bold;
   position: relative;
   margin: 0px auto;
-  padding: 60px 10px 0px; }
+  padding: 0px 10px 0px;
+  color: #283D50; }
 .section-title .subtitle {
   text-align: center;
   margin: 0 auto;
   font-size: 15px;
   padding-top: 25px;
-  padding-bottom: 70px;
+  padding-bottom: 50px;
   color: #556877;
-  width: 40%;
+  width: 600px;
   font-family: "Open Sans", sans-serif;
-  line-height: 25px;
+  line-height: 22px;
+  letter-spacing: 0.8px; }
+
+.why-container .section-title .title {
+  font-size: 36px;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-weight: bold;
+  position: relative;
+  margin: 0px auto;
+  padding: 0px 10px 0px;
+  color: white; }
+.why-container .section-title .subtitle {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 15px;
+  padding-top: 25px;
+  padding-bottom: 50px;
+  color: white;
+  width: 600px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 22px;
   letter-spacing: 0.8px; }
 
 .home-button {
@@ -38,14 +60,12 @@
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
   text-align: left;
-  padding: 15px 0px 15px; }
+  padding: 15px 10px 15px; }
   .card-services h4 {
     font-family: "Montserrat", sans-serif;
     font-size: 18px;
     font-weight: 700;
     margin-bottom: 15px; }
-    .card-services h4:hover {
-      color: #007bff; }
   .card-services i:nth-child(+1) {
     color: purple; }
   .card-services i:nth-child(+2) {
@@ -187,22 +207,92 @@
     top: 235px;
     left: 200px; }
 
+.social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  margin: 0px; }
+  .social-media button {
+    width: 35px;
+    height: 35px;
+    margin-left: 8px;
+    border-radius: 50%;
+    font-size: 130px;
+    border: 1px solid #007bff;
+    background-color: #007bff;
+    position: relative;
+    bottom: -30px;
+    left: -10px; }
+    .social-media button:hover {
+      background-color: #046bda;
+      border: 1px solid #046bda; }
+    .social-media button i {
+      font-size: 18px;
+      color: white;
+      position: relative;
+      bottom: 97px;
+      right: 0px; }
+
+.btn-to-back {
+  position: fixed;
+  background: #007bff;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  line-height: 1;
+  font-size: 16px;
+  border-radius: 50%;
+  right: 15px;
+  bottom: 15px;
+  border: 1px solid #007bff;
+  z-index: 15; }
+  .btn-to-back i {
+    color: white;
+    font-size: 30px; }
+  .btn-to-back a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+    display: inline; }
+
+.carousel {
+  margin: 20px 70px;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  justify-content: space-between;
+  padding-top: 50px; }
+  .carousel .number-carousel {
+    text-align: center;
+    display: flex;
+    flex-direction: column; }
+    .carousel .number-carousel strong {
+      font-weight: bolder;
+      font-size: 48px;
+      display: block; }
+    .carousel .number-carousel p {
+      font-size: 14px;
+      color: #CCE5FF; }
+
 html,
 body {
-  margin: 0px auto; }
+  margin: 0px auto;
+  font-weight: 400; }
 
 .home-container {
   position: relative;
   top: 80px;
   margin: 0px auto 60px;
-  padding: 150px 100px;
+  padding: 70px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   background-color: #1445b3;
-  height: 300px; }
+  height: 420px; }
   .home-container .img-home {
-    width: 630px; }
+    padding-top: 30px;
+    width: 580px; }
   .home-container .home-section {
     display: flex;
     flex-direction: column; }
@@ -210,42 +300,47 @@ body {
     font-family: "Montserrat", sans-serif;
     color: #ecf5ff;
     font-size: 30px;
-    line-height: 65px;
-    font-weight: bolder; }
+    line-height: 55px;
+    font-weight: bolder;
+    padding-left: 15px; }
     .home-container .main-title #solution {
       color: #74b5fc;
       text-decoration: underline; }
 
-.about-container {
-  margin: 0px auto;
-  position: relative;
-  top: 400;
-  display: flex;
-  flex-direction: column;
-  font-family: "Open Sans", sans-serif;
-  letter-spacing: 0.5px;
-  font-size: 16px; }
-  .about-container .sub-container {
-    padding: 0px 80px 60px;
+#about-us {
+  padding-top: 90px; }
+  #about-us .about-container {
+    margin: 0px auto;
+    position: relative;
+    top: 400;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around; }
-    .about-container .sub-container .about-text h3 {
-      margin-bottom: 5px; }
-    .about-container .sub-container .about-text p {
-      margin-top: 0px;
-      font-size: 14px;
-      line-height: 20px;
-      letter-spacing: 0.5px; }
-    .about-container .sub-container .img-home {
-      width: 550px;
-      margin: 0px 15px;
-      padding-top: 10px; }
+    flex-direction: column;
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: 0.5px;
+    font-size: 16px; }
+    #about-us .about-container #about-introduction {
+      padding-left: 18px; }
+    #about-us .about-container .sub-container {
+      padding: 0px 50px 60px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around; }
+      #about-us .about-container .sub-container .about-text h3 {
+        margin-bottom: 5px; }
+      #about-us .about-container .sub-container .about-text p {
+        margin-top: 0px;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.5px; }
+      #about-us .about-container .sub-container .img-home {
+        width: 550px;
+        margin: 0px 15px;
+        padding-top: 15px; }
 
 .services-container {
   background-color: #ecf5ff;
   margin: 0px auto;
-  height: 1000px; }
+  height: 930px; }
   .services-container .section-wrap {
     display: flex;
     flex-direction: row;
@@ -253,29 +348,37 @@ body {
     flex-wrap: wrap;
     margin: 0px auto;
     padding: 0px 30px 50px; }
+    .services-container .section-wrap h4 {
+      margin-bottom: 0px;
+      transition: .4s; }
     .services-container .section-wrap .card-services {
       display: flex;
       flex-direction: column;
       background-color: white;
-      width: 390px;
-      height: 140px;
-      padding: 30px 30px 30px 60px;
-      margin: 30px 30px 0px 30px;
-      box-shadow: 5px 5px 5px #dfdfdf;
+      width: 320px;
+      height: 130px;
+      padding: 10px 25px 25px 60px;
+      margin: 30px 30px 10px 30px;
+      box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
       position: relative;
       overflow: hidden;
-      border-radius: 10px; }
+      border-radius: 10px;
+      transition: .4s; }
+      .services-container .section-wrap .card-services:hover {
+        transform: translateY(-7px); }
+        .services-container .section-wrap .card-services:hover h4 {
+          color: #007bff; }
       .services-container .section-wrap .card-services i {
         position: absolute;
-        top: 80px;
-        left: -20px;
+        top: 50px;
+        left: -22px;
         font-size: 55px; }
 
 .why-container {
   background-color: #004a99;
   margin: 0px auto;
   padding: 0px 80px;
-  height: 700px; }
+  height: 800px; }
   .why-container .card-servieces-second {
     display: flex;
     flex-direction: row;
@@ -284,27 +387,36 @@ body {
     .why-container .card-servieces-second .card-choose {
       margin: 0px auto;
       width: 300px;
-      height: 280px;
+      height: 300px;
       padding: 20px;
-      background-color: #00428a;
+      background-color: #00458f;
       color: white;
-      border: 1px solid #00428a;
+      border: 1px solid #00458f;
       border-radius: 7px;
       text-align: center;
       color: white;
       font-size: 20px;
       font-family: "Montserrat", sans-serif;
       font-weight: bolder; }
+      .why-container .card-servieces-second .card-choose:hover {
+        background-color: #00428a;
+        border: 1px solid #00428a; }
       .why-container .card-servieces-second .card-choose .why-text {
         color: #d8eafe;
         font-size: 16px;
         font-weight: 200;
         line-height: 22px; }
+      .why-container .card-servieces-second .card-choose span {
+        padding-bottom: 5px;
+        border-bottom: 2px solid #00458f;
+        transition: .8s; }
+        .why-container .card-servieces-second .card-choose span:hover {
+          border-bottom: 2px solid white; }
       .why-container .card-servieces-second .card-choose a {
         text-decoration: none;
         color: white;
         font-family: "Montserrat", sans-serif;
-        font-size: 16px;
+        font-size: 14px;
         letter-spacing: .8px; }
       .why-container .card-servieces-second .card-choose i {
         font-size: 50px;
@@ -322,17 +434,50 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    position: relative; }
+    .portfolio-container .wrap-portfolio .portfolio-info {
+      width: 330px;
+      height: 230px;
+      background-color: #00428a;
+      color: white;
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      border-radius: 10px;
+      opacity: 0.6;
+      margin: 0px auto;
+      text-align: center;
+      font-family: "Montserrat", sans-serif;
+      display: none; }
+      .portfolio-container .wrap-portfolio .portfolio-info h4 {
+        opacity: 1;
+        font-size: 20px;
+        margin-top: 50px;
+        margin-bottom: 0px;
+        font-weight: bolder; }
+      .portfolio-container .wrap-portfolio .portfolio-info .portfolio-icon {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 30px;
+        margin: 0px auto;
+        color: white; }
+        .portfolio-container .wrap-portfolio .portfolio-info .portfolio-icon i {
+          padding: 0px 10px; }
     .portfolio-container .wrap-portfolio .img-portfolio {
-      width: 350px;
+      width: 330px;
       height: 230px;
       border-radius: 10px;
-      margin: 10px;
+      margin: 15px;
       overflow: hidden; }
       .portfolio-container .wrap-portfolio .img-portfolio img {
         width: 100%;
         height: 100%;
         object-fit: cover; }
+
+.img-portfolio:hover .portfolio-info {
+  display: block; }
 
 .team-contanier {
   margin: 0px auto 80px; }
@@ -413,6 +558,7 @@ body {
         color: #4b4b4b;
         font-size: 14px; }
       .contact-container .info-container form input {
+        width: calc(100% / 2 - 30px);
         margin: 5px;
         padding: 10px;
         border: 0.5px solid #dad4d4; }
@@ -463,104 +609,68 @@ body {
   background-color: white;
   margin: 0px auto;
   width: 100%;
+  height: 50px;
   position: fixed;
   top: 0px;
   right: -3px;
   z-index: 30;
-  padding: 20px; }
+  padding: 15px; }
 
 .logo-ada .img-ada {
-  width: 85px;
+  width: 65px;
   padding-left: 90px;
-  padding-top: 5px;
+  padding-top: 10px;
   padding-right: 105px; }
 
-.nav
-ul {
+.container-nav {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  list-style: none;
-  padding-right: 105px; }
-  .nav
-  ul .nav-link {
+  padding-right: 105px;
+  text-decoration: none; }
+  .container-nav #home {
+    color: #007bff; }
+  .container-nav .nav-link {
     padding-left: 35px;
     font-family: "Open Sans", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
+    font-weight: 500;
+    font-size: 14px;
     color: #00428a;
+    position: relative;
+    list-style: none;
     cursor: pointer; }
-    .nav
-    ul .nav-link:hover {
-      color: #007bff; }
-      .nav
-      ul .nav-link:hover .subcotainer-nav {
-        display: none; }
+    .container-nav .nav-link a {
+      text-decoration: none;
+      color: #00428a; }
+      .container-nav .nav-link a:hover {
+        color: #007bff; }
 
-/*
+.subcontainer-nav {
+  margin: 30px;
+  right: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  list-style: none;
+  position: absolute;
+  padding: 15px 80px 15px 15px;
+  background-color: white;
+  line-height: 40px;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  transition: ease all 0.3s;
+  display: none; }
+  .subcontainer-nav .sub-nav {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #00428a;
+    position: relative; }
 
+.nav-link:hover .subcontainer-nav {
+  opacity: 1;
+  top: 100%;
+  visibility: visible; }
 
-
-
-
-.container-nav {
-    .subcontainer-nav {
-        width: 120px;
-        height: 300px;
-        background-color: white;
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        padding: 0px;
-
-        box-shadow: 0px 0px 20px 0px rgb(187, 184, 184); 
-    }
-}
-
-
-
-.header {
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-   width: 100%;
-   box-shadow: 0px 0px 30px rgba(127, 137, 16, 0.3);
-   position: fixed;
-   top: 0px;
-   right: -20px;
-   background-color: white;
-   margin: 0px auto;
-   padding: 15px 90px;
-}
-
-.logo-ada {
-    .img-ada {
-        width: 80px;
-        margin: 5px 0px;
-        padding-left: 110px;
-    }
-}
-
-.container-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    list-style: none; 
-    color: $terciary-color;
-    .nav-link {
-        padding-left: 35px; 
-        font-family: $main-text;
-        font-weight: 400;
-        font-size: 16px;
-        position: relative;
-        cursor: pointer;
-            &:hover {
-            color: $nav-color;    
-                  
-        }
-    }
-}
-*/
 footer {
   margin: 0px auto;
   background-color: #004a99;
@@ -574,7 +684,7 @@ footer {
     font-family: "Open Sans", sans-serif;
     letter-spacing: 1px;
     font-weight: 200;
-    font-size: 16px; }
+    font-size: 13px; }
   footer .footer-container {
     margin: 0px auto;
     display: flex;
@@ -619,23 +729,6 @@ footer {
       line-height: 14px; }
       footer .footer-container .detail-footer h4 {
         margin-bottom: 38px; }
-      footer .footer-container .detail-footer .social-media ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        font-size: 130px;
-        position: relative;
-        bottom: 80px;
-        left: 30px; }
-        footer .footer-container .detail-footer .social-media ul li {
-          color: #007bff;
-          margin-left: 18px; }
-        footer .footer-container .detail-footer .social-media ul i {
-          font-size: 18px;
-          color: white;
-          position: relative;
-          top: -35px;
-          right: 80px; }
     footer .footer-container .newsletter-footer {
       font-family: "Montserrat", sans-serif;
       font-size: 14px;

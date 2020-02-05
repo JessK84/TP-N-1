@@ -1,20 +1,22 @@
 html,
 body {
     margin: 0px auto;
+    font-weight: 400;
 }
 
 .home-container {
     position: relative;
     top: 80px;
     margin: 0px auto 60px;
-    padding: 150px 100px;
+    padding: 70px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     background-color: $background;
-    height: 300px;
+    height: 420px;
         .img-home {
-            width: 630px;
+            padding-top: 30px;
+            width: 580px;
         }
     .home-section {
         display: flex;
@@ -24,52 +26,58 @@ body {
     font-family: $main-title;
     color: $secundary-color;
     font-size: 30px;
-    line-height: 65px;
-    font-weight: bolder;;
+    line-height: 55px;
+    font-weight: bolder;
+    padding-left: 15px;
         #solution {
             color: #74b5fc;
             text-decoration: underline;
         }
     }
 } 
-.about-container {
-    margin: 0px auto;
-    position: relative;
-    top: 400;
-    display: flex;
-    flex-direction: column;
-    font-family: $main-text;
-    letter-spacing: 0.5px;
-    font-size: 16px;
-    .sub-container {
-        padding: 0px 80px 60px;
+#about-us {
+    padding-top: 90px;
+    .about-container {
+        margin: 0px auto;
+        position: relative;
+        top: 400;
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        .about-text {
-            h3 {
-                margin-bottom: 5px;
-            }
-            p {
-                margin-top: 0px;
-                font-size: 14px;
-                line-height: 20px;
-                letter-spacing: 0.5px;
+        flex-direction: column;
+        font-family: $main-text;
+        letter-spacing: 0.5px;
+        font-size: 16px;
+            #about-introduction {
+            padding-left: 18px;
         }
-    }
-        .img-home {
-            width: 550px;
-            margin: 0px 15px;
-            padding-top: 10px;
+        .sub-container {
+            padding: 0px 50px 60px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            .about-text {
+                h3 {
+                    margin-bottom: 5px;
+                }
+                p {
+                    margin-top: 0px;
+                    font-size: 14px;
+                    line-height: 20px;
+                    letter-spacing: 0.5px;
+            }
+        }
+            .img-home {
+                width: 550px;
+                margin: 0px 15px;
+                padding-top: 15px;
+            }
         }
     }
 }
 
-
 .services-container {
     background-color: $secundary-color;
     margin: 0px auto;
-    height: 1000px;
+    height: 930px;
     .section-wrap {
         display: flex;
         flex-direction: row;
@@ -77,23 +85,34 @@ body {
         flex-wrap: wrap;
         margin: 0px auto;
         padding: 0px 30px 50px;
+        h4 {
+            margin-bottom: 0px;
+            transition: .4s;
+        }
         .card-services {
-        display: flex;
-        flex-direction: column;
-        background-color: white;
-        width: 390px;
-        height: 140px;
-        padding: 30px 30px 30px 60px;
-        margin: 30px 30px 0px 30px;
-        box-shadow: 5px 5px 5px rgb(223, 223, 223);
-        position: relative;
-        overflow: hidden;
-        border-radius: 10px;
-        i {
-            position: absolute;
-            top: 80px;
-            left: -20px;
-            font-size: 55px;
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            width: 320px;
+            height: 130px;
+            padding: 10px 25px 25px 60px;
+            margin: 30px 30px 10px 30px;
+            box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            transition: .4s;
+                &:hover {
+            transform:translateY(-7px);   
+                & h4 {   
+                color: $nav-color;
+            }
+        } 
+            i {
+                position: absolute;
+                top: 50px;
+                left: -22px;
+                font-size: 55px;
             }
         }
     }
@@ -102,7 +121,7 @@ body {
     background-color: $main-color;
     margin: 0px auto;
     padding: 0px 80px;
-    height: 700px;
+    height: 800px;
     .card-servieces-second {
         display: flex;
         flex-direction: row;
@@ -111,28 +130,40 @@ body {
         .card-choose{
         margin: 0px auto;
         width: 300px;
-        height: 280px;
+        height: 300px;
         padding: 20px;
-        background-color: $secundary-background;
+        background-color: #00458f;
         color: white;
-        border: 1px solid $secundary-background;
+        border: 1px solid #00458f;
         border-radius: 7px;
         text-align: center;
         color: white;
         font-size: 20px;
         font-family: $main-title;
         font-weight: bolder;
+        &:hover {
+            background-color: $secundary-background;
+            border: 1px solid  $secundary-background;
+        }
         .why-text {
             color: #d8eafe;
             font-size: 16px;
             font-weight: 200;
             line-height: 22px;
             }
+            span {
+                padding-bottom: 5px;
+                border-bottom: 2px solid #00458f;
+                transition: .8s;
+                &:hover {
+                    border-bottom: 2px solid white;
+                }
+            }
             a {
                 text-decoration: none;
                 color: white;
                 font-family: $main-title;
-                font-size: 16px;
+                font-size: 14px;
                 letter-spacing: .8px;
             }
             i {
@@ -151,25 +182,64 @@ body {
 
 .portfolio-container {
     margin: 0px auto;
-    .wrap-portfolio {
+    .wrap-portfolio{
         margin: 0px 70px 70px;
         display: flex;
         flex-direction: row;
         justify-content: space-between ;
         flex-wrap: wrap;
-        .img-portfolio {
-            width: 350px;
-            height: 230px;  
-            border-radius: 10px;                
-            margin: 10px; 
-            overflow: hidden;    
-                img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }   
+        position: relative;
+           .portfolio-info {
+                width: 330px;
+                height: 230px;  
+                background-color: $secundary-background;
+                color: white;
+                position: absolute;
+                top: 15px;
+                left: 15px;
+                border-radius: 10px;   
+                opacity: 0.6;
+                margin: 0px auto;
+                text-align: center;
+                font-family: $main-title;
+                display: none;
+                h4 {
+                    opacity: 1;
+                    font-size: 20px;
+                    margin-top: 50px;
+                    margin-bottom: 0px;
+                    font-weight: bolder;   
+                }
+                .portfolio-icon{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    font-size: 30px;
+                    margin: 0px auto;
+                    color: white;     
+                    i{
+                        padding: 0px 10px;
+                    }     
+                }
+            }
+                .img-portfolio {
+                    width: 330px;
+                    height: 230px;  
+                    border-radius: 10px;                
+                    margin: 15px; 
+                    overflow: hidden;    
+                        img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }   
+                }
+            }
         }
-    }
+
+
+.img-portfolio:hover .portfolio-info {
+    display: block;
 }
 
 .team-contanier {
@@ -266,6 +336,7 @@ body {
                         font-size: 14px;   
                     }
                     input {
+                        width: calc(100% / 2 - 30px);
                         margin: 5px;
                         padding: 10px;
                         border: 0.5px solid rgb(218, 212, 212);

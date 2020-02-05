@@ -1,0 +1,25 @@
+.carousel{
+    margin: 20px 70px;
+    display: flex;
+    flex-direction:row;
+    color: white;
+    font-family: $main-title;
+    justify-content: space-between;
+    padding-top: 50px;
+
+    .number-carousel{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    strong {
+        font-weight: bolder;
+        font-size: 48px;
+        display: block;
+    }
+    p{
+        font-size: 14px;
+        color: #CCE5FF;
+
+   }
+ }
+}
