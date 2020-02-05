@@ -116,8 +116,12 @@ body {
                 top: 50px;
                 left: -22px;
                 font-size: 55px;
+                color: red;
                 &:nth-child(2) {
-                    color: red;
+                    color: purple;
+                }
+                &:nth-child(3) {
+                    color: greenyellow;
                 }
             }
         }

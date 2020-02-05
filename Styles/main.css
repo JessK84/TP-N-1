@@ -68,8 +68,6 @@
     margin-bottom: 15px; }
   .card-services i:nth-child(+1) {
     color: purple; }
-  .card-services:nth-child(+2) {
-    color: yellow; }
 
 .main-button {
   display: flex;
@@ -375,9 +373,12 @@ body {
           position: absolute;
           top: 50px;
           left: -22px;
-          font-size: 55px; }
+          font-size: 55px;
+          color: red; }
           #services .services-container .section-wrap .card-services i:nth-child(2) {
-            color: red; }
+            color: purple; }
+          #services .services-container .section-wrap .card-services i:nth-child(3) {
+            color: greenyellow; }
 
 .why-container {
   background-color: #004a99;
