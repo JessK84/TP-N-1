@@ -45,12 +45,12 @@
   border: 2px solid #1445B3;
   transition: .3s all;
   color: #ECF5FF; }
-  .home-button#services {
+  .home-button#btn-services {
     background-color: #1445b3;
     border: 2px solid #ecf5ff;
     color: #ecf5ff;
     transition: .3s all; }
-    .home-button#services:hover {
+    .home-button#btn-services:hover {
       background-color: #007bff;
       border: 2px solid #007bff;
       color: #ecf5ff;
@@ -68,7 +68,7 @@
     margin-bottom: 15px; }
   .card-services i:nth-child(+1) {
     color: purple; }
-  .card-services i:nth-child(+2) {
+  .card-services:nth-child(+2) {
     color: yellow; }
 
 .main-button {
@@ -85,12 +85,12 @@
     font-size: 15px;
     letter-spacing: 2px;
     padding: 10px; }
-    .main-button .home-button#started {
+    .main-button .home-button#btn-started {
       background-color: #007bff;
       border: 1px solid #007bff;
       color: #ecf5ff;
       transition: .3s all; }
-      .main-button .home-button#started:hover {
+      .main-button .home-button#btn-started:hover {
         background-color: #1445b3;
         border: 2px solid #ecf5ff; }
 
@@ -337,47 +337,52 @@ body {
         margin: 0px 15px;
         padding-top: 15px; }
 
-.services-container {
-  background-color: #ecf5ff;
-  margin: 0px auto;
-  height: 930px; }
-  .services-container .section-wrap {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
+#services {
+  padding-top: 90px;
+  background-color: #ecf5ff; }
+  #services .services-container {
+    background-color: #ecf5ff;
     margin: 0px auto;
-    padding: 0px 30px 50px; }
-    .services-container .section-wrap h4 {
-      margin-bottom: 0px;
-      transition: .4s; }
-    .services-container .section-wrap .card-services {
+    height: 930px; }
+    #services .services-container .section-wrap {
       display: flex;
-      flex-direction: column;
-      background-color: white;
-      width: 320px;
-      height: 130px;
-      padding: 10px 25px 25px 60px;
-      margin: 30px 30px 10px 30px;
-      box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
-      position: relative;
-      overflow: hidden;
-      border-radius: 10px;
-      transition: .4s; }
-      .services-container .section-wrap .card-services:hover {
-        transform: translateY(-7px); }
-        .services-container .section-wrap .card-services:hover h4 {
-          color: #007bff; }
-      .services-container .section-wrap .card-services i {
-        position: absolute;
-        top: 50px;
-        left: -22px;
-        font-size: 55px; }
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 0px auto;
+      padding: 0px 30px 50px; }
+      #services .services-container .section-wrap h4 {
+        margin-bottom: 0px;
+        transition: .4s; }
+      #services .services-container .section-wrap .card-services {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        width: 320px;
+        height: 130px;
+        padding: 10px 25px 25px 60px;
+        margin: 30px 30px 10px 30px;
+        box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        transition: .4s; }
+        #services .services-container .section-wrap .card-services:hover {
+          transform: translateY(-7px); }
+          #services .services-container .section-wrap .card-services:hover h4 {
+            color: #007bff; }
+        #services .services-container .section-wrap .card-services i {
+          position: absolute;
+          top: 50px;
+          left: -22px;
+          font-size: 55px; }
+          #services .services-container .section-wrap .card-services i:nth-child(2) {
+            color: red; }
 
 .why-container {
   background-color: #004a99;
   margin: 0px auto;
-  padding: 0px 80px;
+  padding: 90px 80px 0px;
   height: 800px; }
   .why-container .card-servieces-second {
     display: flex;
@@ -427,74 +432,79 @@ body {
           color: #d8eafe;
           font-size: 40px; }
 
-.portfolio-container {
-  margin: 0px auto; }
-  .portfolio-container .wrap-portfolio {
-    margin: 0px 70px 70px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    position: relative; }
-    .portfolio-container .wrap-portfolio .portfolio-info {
-      width: 330px;
-      height: 230px;
-      background-color: #00428a;
-      color: white;
-      position: absolute;
-      top: 15px;
-      left: 15px;
-      border-radius: 10px;
-      opacity: 0.6;
-      margin: 0px auto;
-      text-align: center;
-      font-family: "Montserrat", sans-serif;
-      display: none; }
-      .portfolio-container .wrap-portfolio .portfolio-info h4 {
-        opacity: 1;
-        font-size: 20px;
-        margin-top: 50px;
-        margin-bottom: 0px;
-        font-weight: bolder; }
-      .portfolio-container .wrap-portfolio .portfolio-info .portfolio-icon {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        font-size: 30px;
+#portfolio {
+  padding-top: 90px; }
+  #portfolio .portfolio-container {
+    margin: 0px auto; }
+    #portfolio .portfolio-container .wrap-portfolio {
+      margin: 0px 70px 70px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      position: relative; }
+      #portfolio .portfolio-container .wrap-portfolio .portfolio-info {
+        width: 330px;
+        height: 230px;
+        background-color: #00428a;
+        color: white;
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        border-radius: 10px;
+        opacity: 0.6;
         margin: 0px auto;
-        color: white; }
-        .portfolio-container .wrap-portfolio .portfolio-info .portfolio-icon i {
-          padding: 0px 10px; }
-    .portfolio-container .wrap-portfolio .img-portfolio {
-      width: 330px;
-      height: 230px;
-      border-radius: 10px;
-      margin: 15px;
-      overflow: hidden; }
-      .portfolio-container .wrap-portfolio .img-portfolio img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover; }
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        display: none; }
+        #portfolio .portfolio-container .wrap-portfolio .portfolio-info h4 {
+          opacity: 1;
+          font-size: 20px;
+          margin-top: 50px;
+          margin-bottom: 0px;
+          font-weight: bolder; }
+        #portfolio .portfolio-container .wrap-portfolio .portfolio-info .portfolio-icon {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          font-size: 30px;
+          margin: 0px auto;
+          color: white; }
+          #portfolio .portfolio-container .wrap-portfolio .portfolio-info .portfolio-icon i {
+            padding: 0px 10px; }
+      #portfolio .portfolio-container .wrap-portfolio .img-portfolio {
+        width: 330px;
+        height: 230px;
+        border-radius: 10px;
+        margin: 15px;
+        overflow: hidden; }
+        #portfolio .portfolio-container .wrap-portfolio .img-portfolio img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
 
 .img-portfolio:hover .portfolio-info {
   display: block; }
 
-.team-contanier {
-  margin: 0px auto 80px; }
-  .team-contanier .team {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 0px 60px; }
-    .team-contanier .team .img-team {
-      width: 250px;
-      height: 250px;
-      border-radius: 50%; }
+#team {
+  padding-top: 90px; }
+  #team .team-contanier {
+    margin: 0px auto 80px; }
+    #team .team-contanier .team {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin: 0px 60px; }
+      #team .team-contanier .team .img-team {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%; }
 
 .client-container {
   margin: 0px auto;
   background-color: #ecf5ff;
-  height: 700px; }
+  height: 650px;
+  padding-top: 70px; }
   .client-container .wrap-clients {
     display: flex;
     flex-direction: row;
@@ -514,62 +524,70 @@ body {
           transform: scale(1.2);
           transition: .4s; }
 
-.contact-container {
-  margin: 0px 20px;
-  font-family: "Open Sans", sans-serif;
-  color: #4b4b4b;
-  box-sizing: border-box;
-  text-align: center; }
-  .contact-container .info-container {
-    margin: 60px auto 0px;
-    display: flex;
-    flex-direction: row;
-    justify-content: stretch;
-    width: 100%; }
-    .contact-container .info-container .info-contact {
-      margin: 0px auto;
-      width: 50%; }
-      .contact-container .info-container .info-contact .contact-address {
-        margin: 0px auto 30px;
-        display: flex;
-        flex-direction: row; }
-        .contact-container .info-container .info-contact .contact-address .contact-us {
-          margin-left: 4px;
-          font-size: 14px; }
-          .contact-container .info-container .info-contact .contact-address .contact-us i {
-            color: #007bff;
-            font-size: 24px;
-            margin: 0px 15px; }
-    .contact-container .info-container .map-contact {
+#contact-us {
+  padding-top: 90px; }
+  #contact-us .contact-container {
+    margin: 0px 20px;
+    font-family: "Open Sans", sans-serif;
+    color: #4b4b4b;
+    box-sizing: border-box;
+    text-align: center; }
+    #contact-us .contact-container .info-container {
+      margin: 60px auto 0px;
+      display: flex;
+      flex-direction: row;
+      justify-content: stretch;
+      width: 100%; }
+      #contact-us .contact-container .info-container .info-contact {
+        margin: 0px auto;
+        width: 50%; }
+        #contact-us .contact-container .info-container .info-contact .contact-address {
+          margin: 0px auto 30px;
+          display: flex;
+          flex-direction: row; }
+          #contact-us .contact-container .info-container .info-contact .contact-address .contact-us {
+            margin-left: 4px;
+            font-size: 14px; }
+            #contact-us .contact-container .info-container .info-contact .contact-address .contact-us i {
+              color: #007bff;
+              font-size: 26px;
+              margin: 0px 15px;
+              vertical-align: middle; }
+    #contact-us .contact-container .map-contact {
       width: 50%;
       margin: 0px auto; }
-      .contact-container .info-container .map-contact iframe {
+      #contact-us .contact-container .map-contact iframe {
         width: 100%;
         height: 300px; }
-    .contact-container .info-container form {
-      margin: 15px; }
-      .contact-container .info-container form textarea {
+    #contact-us .contact-container form {
+      margin: 10px;
+      font-size: 14px;
+      font-family: "Open Sans", sans-serif; }
+      #contact-us .contact-container form textarea {
         width: 100%;
-        margin: 5px;
         height: 100px;
         padding: 10px;
         border: 0.5px solid #dad4d4;
-        font-family: "Open Sans", sans-serif;
         color: #4b4b4b;
-        font-size: 14px; }
-      .contact-container .info-container form input {
-        width: calc(100% / 2 - 30px);
-        margin: 5px;
-        padding: 10px;
-        border: 0.5px solid #dad4d4; }
-        .contact-container .info-container form input#subjet {
-          width: 100%; }
+        margin-left: 8px; }
+      #contact-us .contact-container form .info-form {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 15px; }
+        #contact-us .contact-container form .info-form input {
+          width: 100%;
+          height: 15px;
+          margin-left: 8px;
+          padding: 10px;
+          border: 0.5px solid #dad4d4; }
 
 .testimonial-container {
   margin: 0px auto;
-  height: 430px;
+  height: 360px;
   background-color: #ecf5ff;
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Montserrat", sans-serif;
+  padding-top: 60px; }
   .testimonial-container .testiomonial-card {
     margin: 30px auto;
     width: 800px;
@@ -725,7 +743,7 @@ footer {
       text-align: left;
       width: 300px;
       height: 350px;
-      margin-top: 30px;
+      margin-top: 34px;
       line-height: 14px; }
       footer .footer-container .detail-footer h4 {
         margin-bottom: 38px; }

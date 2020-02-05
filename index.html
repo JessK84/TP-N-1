@@ -20,9 +20,9 @@
             <ul class="container-nav">
                 <li class="nav-link"><a href="#back"  id="home"> Home</a></li>
                 <li class="nav-link"><a href="#about-us">About Us</a> </li>
-                <li class="nav-link">Services</li>
-                <li class="nav-link">Portfolio</li>
-                <li class="nav-link">Team</li>
+                <li class="nav-link"><a href="#services">Services</a> </li>
+                <li class="nav-link"><a href="#portfolio">Portfolio</a> </li>
+                <li class="nav-link"><a href="#team">Team</a> </li>
                 <li class="nav-link">Drop Down <i class="fas fa-sort-down"></i></li>
                     <ul class="subcontainer-nav">
                         <li class="sub-nav">Drop Down 1</li>
@@ -31,7 +31,7 @@
                         <li class="sub-nav">Drop Down 4</li>
                         <li class="sub-nav">Drop Down 5</li>
                     </ul> 
-                <li class="nav-link">Contact Us</li>
+                <li class="nav-link"><a href="#contact-us">Contact Us</a> </li>
             </ul>
         </nav>
     </header >
@@ -52,8 +52,8 @@
                     <h1>We provide <br> <span id="solution"> solutions</span> <br> for your business!</h1>
                 </div>
                 <div class="main-button">
-                    <button class="home-button" id="started">Get Started</button>
-                    <button class="home-button" id="services">Our Services</button>
+                    <button class="home-button" id="btn-started">Get Started</button>
+                    <button class="home-button" id="btn-services">Our Services</button>
                 </div>
             </div>    
             <div class="img-section">
@@ -126,41 +126,43 @@
                 </div>
             </div>
         </section>    
-        <section class="services-container" >
-            <header class="section-title">
-                <h2 class="title">Services</h2>
-                <p class="subtitle">Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus.</p>
-            </header>
-            <section class="section-wrap">
-                <div class="card-services">
-                    <i class="fas fa-spinner"></i>
-                    <h4>Lorem Ipsum </h4>
-                    <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-                </div>
-                <div class="card-services">
-                    <i class="fas fa-book"></i>
-                    <h4>Dolor Sitema </h4>
-                    <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
-                </div>
-                <div class="card-services">
-                    <i class="far fa-sticky-note"></i>
-                    <h4>Sed ut perspiciatis</h4>
-                    <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-                </div>
-                <div class="card-services">
-                    <i class="fas fa-tachometer-alt"></i>
-                    <h4>Magni Dolores </h4>
-                    <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-                </div>
-                <div class="card-services">
-                    <i class="fas fa-globe-americas"></i>
-                    <h4>Nemo Enim</h4>
-                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
-                </div>
-                <div class="card-services">
-                    <i class="far fa-clock"></i>
-                    <h4>Eiusmod Tempor</h4>
-                    <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+        <section id="services">
+            <div class="services-container" >
+                <header class="section-title">
+                    <h2 class="title">Services</h2>
+                    <p class="subtitle">Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus.</p>
+                </header>
+                <section class="section-wrap">
+                    <div class="card-services">
+                        <i class="fas fa-spinner"></i>
+                        <h4>Lorem Ipsum </h4>
+                        <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+                    </div>
+                    <div class="card-services">
+                        <i class="fas fa-book"></i>
+                        <h4>Dolor Sitema </h4>
+                        <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+                    </div>
+                    <div class="card-services">
+                        <i class="far fa-sticky-note"></i>
+                        <h4>Sed ut perspiciatis</h4>
+                        <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+                    </div>
+                    <div class="card-services">
+                        <i class="fas fa-tachometer-alt"></i>
+                        <h4>Magni Dolores </h4>
+                        <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+                    </div>
+                    <div class="card-services">
+                        <i class="fas fa-globe-americas"></i>
+                        <h4>Nemo Enim</h4>
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+                    </div>
+                    <div class="card-services">
+                        <i class="far fa-clock"></i>
+                        <h4>Eiusmod Tempor</h4>
+                        <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+                    </div>
                 </div>
             </section>
         </section>
@@ -208,56 +210,58 @@
                 </div>    
             </div>    
         </section>
-        <section class="portfolio-container">
-            <header class="section-title">
-                <h2 class="title">Our Portfolio</h2>
-            </header>
-            <div class="button-portfolio">
-                <button>ALL</button>
-                <button>APP</button>
-                <button>CARD</button>
-                <button>WEB</button>
-            </div>
-            <div class="wrap-portfolio">
-                <div class="img-portfolio">
-                    <img src="img/portfolio/app1.jpg"alt="">
-                    <div class="portfolio-info">
-                        <h4>App 1</h4>
-                        <p><strong>AAP</strong> </p>
-                        <div class="portfolio-icon">
-                            <i class="fas fa-eye"></i>
-                            <i class="fas fa-info"></i>
+        <section id="portfolio">
+            <div class="portfolio-container">
+                <header class="section-title">
+                    <h2 class="title">Our Portfolio</h2>
+                </header>
+                <div class="button-portfolio">
+                    <button>ALL</button>
+                    <button>APP</button>
+                    <button>CARD</button>
+                    <button>WEB</button>
+                </div>
+                <div class="wrap-portfolio">
+                    <div class="img-portfolio">
+                        <img src="img/portfolio/app1.jpg"alt="">
+                        <div class="portfolio-info">
+                            <h4>App 1</h4>
+                            <p><strong>AAP</strong> </p>
+                            <div class="portfolio-icon">
+                                <i class="fas fa-eye"></i>
+                                <i class="fas fa-info"></i>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="img-portfolio">
-                    <img src="img/portfolio/web3.jpg"alt="">
-                    <div class="portfolio-info">
+                    <div class="img-portfolio">
+                        <img src="img/portfolio/web3.jpg"alt="">
+                        <div class="portfolio-info">
 
+                        </div>
                     </div>
+                    <div class="img-portfolio">
+                        <img src="img/portfolio/app2.jpg"alt="">
+                    </div>
+                    <div class="img-portfolio">
+                        <img src="img/portfolio/card2.jpg"alt="">">
+                    </div>
+                    <div class="img-portfolio">
+                        <img src="img/portfolio/web2.jpg"alt="">
+                    </div>
+                    <div class="img-portfolio">
+                        <img src="img/portfolio/app3.jpg"alt="">
+                    </div>
+                    <div class="img-portfolio">
+                        <img src="img/portfolio/card1.jpg"alt="">
+                    </div>
+                    <div class="img-portfolio">
+                        <img src=" img/portfolio/card3.jpg"alt="">  
+                    </div>
+                    <div class="img-portfolio">
+                        <img src="img/portfolio/web1.jpg"alt="">
+                    </div>    
                 </div>
-                <div class="img-portfolio">
-                    <img src="img/portfolio/app2.jpg"alt="">
-                </div>
-                <div class="img-portfolio">
-                    <img src="img/portfolio/card2.jpg"alt="">">
-                </div>
-                <div class="img-portfolio">
-                    <img src="img/portfolio/web2.jpg"alt="">
-                </div>
-                <div class="img-portfolio">
-                    <img src="img/portfolio/app3.jpg"alt="">
-                </div>
-                <div class="img-portfolio">
-                    <img src="img/portfolio/card1.jpg"alt="">
-                </div>
-                <div class="img-portfolio">
-                    <img src=" img/portfolio/card3.jpg"alt="">  
-                </div>
-                <div class="img-portfolio">
-                    <img src="img/portfolio/web1.jpg"alt="">
-                </div>    
-            </div>
+            </div>    
         </section>
         <section class="testimonial-container">
             <header class="section-title">
@@ -331,17 +335,19 @@
                 <button class="btn-four"></button>
             </div>
         </section>
-        <section  class="team-contanier">
-            <header class="section-title">
-                <h2 class="title">Team</h2>
-                <p class="subtitle">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
-            </header>
-            <div class="team">
-                <img src="img/team-01.jpg" alt="" class="img-team">
-                <img src="img/team-02.jpg" alt="" class="img-team">
-                <img src="img/team-03.jpg" alt="" class="img-team">
-                <img src="img/team-04.jpg" alt="" class="img-team">
-            </div>
+        <section id="team">
+            <div class="team-contanier">
+                <header class="section-title">
+                    <h2 class="title">Team</h2>
+                    <p class="subtitle">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+                </header>
+                <div class="team">
+                    <img src="img/team-01.jpg" alt="" class="img-team">
+                    <img src="img/team-02.jpg" alt="" class="img-team">
+                    <img src="img/team-03.jpg" alt="" class="img-team">
+                    <img src="img/team-04.jpg" alt="" class="img-team">
+                </div>
+            </div>    
         </section>
         <section class="client-container">
             <header class="section-title">
@@ -375,41 +381,42 @@
                 </div>
             </div>
         </section>
-        <section class="contact-container">
-            <header class="section-title">
-                <h2 class="title">Contact Us</h2>
-            </header>
-
-            <div class="info-container">
-                <div class="map-contact"> <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d24194.866499591502!2d-74.006227!3d40.710128!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1ses!2sbg!4v1580557582667!5m2!1ses!2sbg" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-               </div>          
-                <div class="info-contact">
-                    <div class="contact-address">
-                        <div class="contact-us">
-                            <p> <i class="fas fa-map-marker-alt"></i>A108 Adam Street, NY 535022</p>
+        <section id="contact-us">
+            <div class="contact-container">
+                <header class="section-title">
+                    <h2 class="title">Contact Us</h2>
+                </header>
+                <div class="info-container">
+                    <div class="map-contact"> <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d24194.866499591502!2d-74.006227!3d40.710128!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1ses!2sbg!4v1580557582667!5m2!1ses!2sbg" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </div>          
+                    <div class="info-contact">
+                        <div class="contact-address">
+                            <div class="contact-us">
+                                <p> <i class="fas fa-map-marker-alt"></i>A108 Adam Street, NY 535022</p>
+                            </div>
+                            <div class="contact-us">
+                                <p> <i class="far fa-envelope"></i>info@example.com</p>
+                            </div>
+                            <div class="contact-us">
+                                <p><i class="fas fa-phone"></i>+1 5589 55488 55</p>
+                            </div>
                         </div>
-                        <div class="contact-us">
-                            <p> <i class="far fa-envelope"></i>info@example.com</p>
-                        </div>
-                        <div class="contact-us">
-                            <p><i class="fas fa-phone"></i>+1 5589 55488 55</p>
-                        </div>
-                    </div>
-                    <form action="">
-                        <div class="info-form">
-                            <input type="text" placeholder="Your Name">
-                            <input type="email" placeholder="Your Email">
-                        </div>
-                        <div class="info-form">
-                            <input type="text" placeholder="Subject" id="subjet">
-                        </div>
-                        <div class="info-form">
-                            <textarea name="Mesage" id="mesaje"  required cols="30" rows="10">Message</textarea>
-                        </div>
-                    </form>
-                    <button class="btn-message">Send Message</button>
-                </div>    
-            </div>  
+                        <form action="">
+                            <div class="info-form">
+                                <input type="text" placeholder="Your Name">
+                                <input type="email" placeholder="Your Email">
+                            </div>
+                            <div class="info-form">
+                                <input type="text" placeholder="Subject">
+                            </div>
+                            <div class="info-form">
+                                <textarea name="Mesage" id="mesaje"  required cols="30" rows="10">Message</textarea>
+                            </div>
+                        </form>
+                        <button class="btn-message">Send Message</button>
+                    </div>    
+                </div>  
+            </div>    
         </section>
     </main>
     <footer>

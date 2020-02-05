@@ -74,6 +74,9 @@ body {
     }
 }
 
+#services {
+    padding-top: 90px;
+    background-color: $secundary-color;
 .services-container {
     background-color: $secundary-color;
     margin: 0px auto;
@@ -113,14 +116,18 @@ body {
                 top: 50px;
                 left: -22px;
                 font-size: 55px;
+                &:nth-child(2) {
+                    color: red;
+                }
             }
         }
     }
 }
+}
 .why-container {
     background-color: $main-color;
     margin: 0px auto;
-    padding: 0px 80px;
+    padding: 90px 80px 0px;
     height: 800px;
     .card-servieces-second {
         display: flex;
@@ -180,6 +187,8 @@ body {
     }
 }
 
+#portfolio {
+    padding-top: 90px;
 .portfolio-container {
     margin: 0px auto;
     .wrap-portfolio{
@@ -236,12 +245,14 @@ body {
                 }
             }
         }
-
+    }
 
 .img-portfolio:hover .portfolio-info {
     display: block;
 }
 
+#team {
+    padding-top: 90px;
 .team-contanier {
     margin: 0px auto 80px;
     .team {
@@ -253,14 +264,15 @@ body {
         width: 250px;
         height: 250px;
         border-radius: 50%;
+            }
         }
     }
 }
-
 .client-container{
     margin: 0px auto;
     background-color: $secundary-color;
-    height: 700px;
+    height: 650px;
+    padding-top: 70px;
     .wrap-clients {
         display: flex;
         flex-direction: row;
@@ -284,7 +296,8 @@ body {
         }
     }
 }
-
+#contact-us {
+    padding-top: 90px;
 .contact-container{
     margin: 0px 20px;
     font-family: $main-text;
@@ -309,51 +322,59 @@ body {
                     font-size: 14px;
                 i {
                     color: $nav-color;
-                    font-size: 24px;
+                    font-size: 26px;
                     margin: 0px 15px;
-                }
-            }
-     }
-} 
-            .map-contact{
-                width: 50%;
-                margin: 0px auto;
-                iframe {
-                    width: 100%;
-                    height: 300px;
-                }
-            }
-            form {
-                margin: 15px;
-                     textarea {
-                        width: 100%;
-                        margin: 5px;
-                        height: 100px;
-                        padding: 10px;
-                        border: 0.5px solid rgb(218, 212, 212);     
-                        font-family: $main-text;
-                        color: #4b4b4b;    
-                        font-size: 14px;   
+                    vertical-align: middle;
                     }
-                    input {
-                        width: calc(100% / 2 - 30px);
-                        margin: 5px;
-                        padding: 10px;
-                        border: 0.5px solid rgb(218, 212, 212);
-                        &#subjet {
-                            width: 100%;
-                        }                  
-                    }          
-            }
-    }   
+                }
+        }
+    } 
+}    
+ 
+.map-contact{
+    width: 50%;
+    margin: 0px auto;
+    iframe {
+        width: 100%;
+        height: 300px;
+    }
 }
+
+form {
+    margin: 10px;
+    font-size: 14px;  
+    font-family: $main-text; 
+    textarea {
+        width: 100%;
+        height: 100px;
+        padding: 10px;
+        border: 0.5px solid rgb(218, 212, 212);     
+        color: #4b4b4b;    
+        margin-left: 8px;
+        }
+        .info-form {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 15px;
+            input {
+                width: 100%;
+                height: 15px;
+                margin-left: 8px;
+                padding: 10px;
+                border: 0.5px solid rgb(218, 212, 212);
+                }                   
+            }          
+        }
+    }   
+}            
 
 .testimonial-container {
     margin: 0px auto;
-    height: 430px;
+    height: 360px;
     background-color: #ecf5ff;
     font-family: $main-title;
-    
+    padding-top: 60px;
     .testiomonial-card {
         margin: 30px auto;
         width: 800px;
