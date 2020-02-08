@@ -57,8 +57,8 @@
     i{
         color: white;
         transition: .5s all;
+        }
     }
-}
 }
 
 .button-portfolio {
@@ -118,8 +118,7 @@
         transform: scaleX(200px);;
         &:hover .testimonial-card .slider {
             display: block;
-        }
-       
+        }    
           
     }
 }
@@ -163,7 +162,6 @@
         left: 200px;
     }
 }
-
 
 .social-media{      
     display: flex;
@@ -220,9 +218,9 @@
     }
 }
 .mobile-button {
-    position: absolute;
-    top: 25px;
-    right: 60px;
+    position: fixed;
+    top: -5px;
+    right: 30px;
     z-index: 31;
     color: $background;
     border: none;
