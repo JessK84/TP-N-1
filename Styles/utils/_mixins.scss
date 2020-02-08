@@ -1,5 +1,5 @@
 
-@mixin titles-sections ($letter-title-color){
+@mixin titles-sections ($letter-title-color) {
     font-size:$main-size;
     font-family: $main-title;
     text-align: center;
@@ -24,6 +24,7 @@
     letter-spacing: 0.8px;
 }
 
+
 .section-title {
     .title {   
     @include titles-sections($letter-title-color)} 
@@ -39,6 +40,12 @@
     }
 }
 
+.about-container {
+    .subsection-title {
+        .title {   
+        @include titles-sections(white)} 
+    }
+}
 
 @mixin button ($nav-color){
     background-color: $nav-color;
@@ -74,12 +81,12 @@
         font-family:$main-title;
         font-size: 18px;
         font-weight: 700;
-        margin-bottom: 15px;
-      
+       margin-bottom: 15px; 
     }
    
-    i:nth-child(+1){
-        color: purple;
+    i {
+        color: red;
+        
     }
     
  

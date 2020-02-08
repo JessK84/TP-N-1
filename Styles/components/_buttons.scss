@@ -106,20 +106,21 @@
 
 .button-testimonial {
     text-align: center;
+    margin-top: 220px;
     button {
-    width: 13px;
-    height: 13px;
-    border-radius: 50%;
-    border: none;
-    margin: 4px;
-    background-color: $nav-color;
-    cursor: pointer;
-        &:nth-child(+2){
-            background-color: #ddd;
-            &:hover .sara {
-                background-color: $nav-color;
-            }
-        }        
+        width: 11px;
+        height: 11px;
+        border-radius: 50%;
+        border: none;
+        margin: 3px;
+        background-color: $nav-color;
+        cursor: pointer;
+        transform: scaleX(200px);;
+        &:hover .testimonial-card .slider {
+            display: block;
+        }
+       
+          
     }
 }
 
@@ -216,5 +217,19 @@
         text-decoration: none;
         background-color: transparent;
         display: inline;
+    }
+}
+.mobile-button {
+    position: absolute;
+    top: 25px;
+    right: 60px;
+    z-index: 31;
+    color: $background;
+    border: none;
+    background-color: white;
+    font-size: 30px;
+    display: none;
+    @media (max-width: 999px) {   
+        display: block;
     }
 }

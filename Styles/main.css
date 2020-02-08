@@ -40,6 +40,16 @@
   line-height: 22px;
   letter-spacing: 0.8px; }
 
+.about-container .subsection-title .title {
+  font-size: 36px;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-weight: bold;
+  position: relative;
+  margin: 0px auto;
+  padding: 0px 10px 0px;
+  color: white; }
+
 .home-button {
   background-color: #1445B3;
   border: 2px solid #1445B3;
@@ -66,8 +76,8 @@
     font-size: 18px;
     font-weight: 700;
     margin-bottom: 15px; }
-  .card-services i:nth-child(+1) {
-    color: purple; }
+  .card-services i {
+    color: red; }
 
 .main-button {
   display: flex;
@@ -156,19 +166,19 @@
         background-color: #007bff; }
 
 .button-testimonial {
-  text-align: center; }
+  text-align: center;
+  margin-top: 220px; }
   .button-testimonial button {
-    width: 13px;
-    height: 13px;
+    width: 11px;
+    height: 11px;
     border-radius: 50%;
     border: none;
-    margin: 4px;
+    margin: 3px;
     background-color: #007bff;
-    cursor: pointer; }
-    .button-testimonial button:nth-child(+2) {
-      background-color: #ddd; }
-      .button-testimonial button:nth-child(+2):hover .sara {
-        background-color: #007bff; }
+    cursor: pointer;
+    transform: scaleX(200px); }
+    .button-testimonial button:hover .testimonial-card .slider {
+      display: block; }
 
 .btn-message {
   width: 190px;
@@ -253,6 +263,20 @@
     background-color: transparent;
     display: inline; }
 
+.mobile-button {
+  position: absolute;
+  top: 25px;
+  right: 60px;
+  z-index: 31;
+  color: #1445b3;
+  border: none;
+  background-color: white;
+  font-size: 30px;
+  display: none; }
+  @media (max-width: 999px) {
+    .mobile-button {
+      display: block; } }
+
 .carousel {
   margin: 20px 70px;
   display: flex;
@@ -318,12 +342,22 @@ body {
     font-size: 16px; }
     #about-us .about-container #about-introduction {
       padding-left: 18px; }
+    #about-us .about-container .subsection-title h3 {
+      padding-top: 15px;
+      font-size: 24px;
+      letter-spacing: 1px;
+      line-height: 28px;
+      font-weight: bold;
+      padding-bottom: 10px; }
+    #about-us .about-container .subsection-title p {
+      padding-top: 0px;
+      padding-bottom: 20px; }
     #about-us .about-container .sub-container {
       padding: 0px 50px 60px;
       display: flex;
       flex-direction: row;
       justify-content: space-around; }
-      #about-us .about-container .sub-container .about-text h3 {
+      #about-us .about-container .sub-container .about-text h4 {
         margin-bottom: 5px; }
       #about-us .about-container .sub-container .about-text p {
         margin-top: 0px;
@@ -373,12 +407,7 @@ body {
           position: absolute;
           top: 50px;
           left: -22px;
-          font-size: 55px;
-          color: red; }
-          #services .services-container .section-wrap .card-services i:nth-child(2) {
-            color: purple; }
-          #services .services-container .section-wrap .card-services i:nth-child(3) {
-            color: greenyellow; }
+          font-size: 55px; }
 
 .why-container {
   background-color: #004a99;
@@ -513,6 +542,9 @@ body {
     flex-wrap: wrap;
     margin: 0px 60px; }
     .client-container .wrap-clients .container-clients {
+      margin: 0px;
+      vertical-align: middle;
+      float: left;
       text-align: center;
       padding-top: 60px;
       width: 250px;
@@ -588,30 +620,40 @@ body {
   height: 360px;
   background-color: #ecf5ff;
   font-family: "Montserrat", sans-serif;
-  padding-top: 60px; }
+  padding-top: 60px;
+  position: relative; }
+  .testimonial-container .testiomonial-card-fixed,
   .testimonial-container .testiomonial-card {
     margin: 30px auto;
     width: 800px;
     display: flex;
     flex-direction: row;
-    justify-content: center; }
+    justify-content: center;
+    position: absolute;
+    top: 50;
+    left: 230px; }
+    .testimonial-container .testiomonial-card-fixed.slider,
     .testimonial-container .testiomonial-card.slider {
       display: none; }
+    .testimonial-container .testiomonial-card-fixed h3,
     .testimonial-container .testiomonial-card h3 {
       font-size: 22px;
       font-weight: bolder;
       line-height: 15px;
       color: #111;
       margin-bottom: 0px; }
+    .testimonial-container .testiomonial-card-fixed h4,
     .testimonial-container .testiomonial-card h4 {
       margin-top: 10px;
       font-size: 16px;
       color: #999;
       font-weight: 300; }
+    .testimonial-container .testiomonial-card-fixed p,
     .testimonial-container .testiomonial-card p {
       font-style: italic;
       color: #4e4d4d;
-      font-size: 18px; }
+      font-size: 16px; }
+    .testimonial-container .testiomonial-card-fixed .img-testimonial,
     .testimonial-container .testiomonial-card .img-testimonial {
       width: 120px;
       height: 120px;
@@ -642,11 +684,15 @@ body {
   padding-right: 105px; }
 
 .container-nav {
+  max-width: 999px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   padding-right: 105px;
   text-decoration: none; }
+  @media (max-width: 1000px) {
+    .container-nav {
+      display: none; } }
   .container-nav #home {
     color: #007bff; }
   .container-nav .nav-link {
@@ -684,11 +730,6 @@ body {
     font-size: 14px;
     color: #00428a;
     position: relative; }
-
-.nav-link:hover .subcontainer-nav {
-  opacity: 1;
-  top: 100%;
-  visibility: visible; }
 
 footer {
   margin: 0px auto;

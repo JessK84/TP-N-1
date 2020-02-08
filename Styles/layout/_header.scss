@@ -13,22 +13,26 @@
     z-index: 30;
     padding: 15px;
 }
- 
+
 .logo-ada {
     .img-ada {
         width: 65px;
         padding-left: 90px;
         padding-top: 10px;
         padding-right: 105px;
-     }
+      }
  }
 
 .container-nav {
+    max-width: 999px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     padding-right: 105px;
     text-decoration: none;
+    @media (max-width: 1000px){
+        display: none;
+    }
     #home {
         color: $nav-color
     } 
@@ -74,9 +78,7 @@
     }
 }
 
-
-.nav-link:hover .subcontainer-nav {
-    opacity: 1;
-    top: 100%;
-    visibility: visible;
-}
+//  @media { (max-width:900px );
+    // #header {
+        
+    // }
