@@ -13,22 +13,73 @@ body {
     flex-direction: row;
     justify-content: space-between;
     background-color: $background;
-    height: 420px;
+        @media (max-width:1100px) {
+            & {
+                display: flex;
+                flex-direction: column-reverse;
+                justify-content: center;
+                text-align: center;
+                padding: 5% 10%;    
+                margin: 0px auto;
+            }
+        }
+        @media (max-width: 700px) {
+                & {
+                    display: flex;
+                    padding: 5% 10%;    
+                    margin: 0px auto;
+                }
+            }
+
         .img-home {
             padding-top: 30px;
-            width: 580px;
+            width: 560px;
+            @media (max-width:1100px) {
+                & {
+                    display: flex;
+                    flex-direction: column-reverse;
+                    justify-content: center;
+                    text-align: center;
+                    width: 75%;
+                    padding: 1% 10%;
+                    padding-top: 7px;
+                }
+            }
+            @media (max-width:850px ) {
+                & {
+                    display: flex;
+                    justify-content: center;
+                    text-align: center;
+                    width: 90%;
+                    padding: 1%;
+                }
+            }
         }
     .home-section {
         display: flex;
-        flex-direction: column;
-}
+        flex-direction: column;      
+    }
 .main-title {
     font-family: $main-title;
     color: $secundary-color;
     font-size: 30px;
     line-height: 55px;
-    font-weight: bolder;
+    font-weight: bold;
     padding-left: 15px;
+    @media (max-width:550px) {
+        & {
+            font-size: 25px;
+            line-height: 42px;
+            padding: 1%;
+        }
+    }
+    @media (max-width:450px) {
+        & {
+            font-size: 20px;
+            line-height: 36px;
+            padding: 1%;
+        }
+    }
         #solution {
             color: #74b5fc;
             text-decoration: underline;
@@ -57,10 +108,16 @@ body {
                 line-height: 28px;
                 font-weight: bold;
                 padding-bottom: 10px;
+                @media (max-width: 500px){
+                    font-size: 20px;
+                }
             }
             p {
                 padding-top: 0px;
                 padding-bottom: 20px;
+                @media (max-width: 500px){
+                    font-size: 15px;
+                }
             }
         }
         .sub-container {
@@ -68,6 +125,18 @@ body {
             display: flex;
             flex-direction: row;
             justify-content: space-around;
+            @media (max-width: 1100px) {
+                display: flex;
+                flex-direction: column-reverse;
+                justify-content: center;
+                padding: 2%;
+                &:nth-child(+3) {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    padding: 2%;
+                }
+            }
             .about-text {
                 h4 {
                     margin-bottom: 5px;
@@ -83,6 +152,10 @@ body {
                 width: 550px;
                 margin: 0px 15px;
                 padding-top: 15px;
+                @media (max-width: 1100px){
+                width: 100%;
+                margin: 2%;
+                }
             }
         }
     }
@@ -92,10 +165,17 @@ body {
 #services {
     padding-top: 90px;
     background-color: $secundary-color;
+    @media (max-width: 1100px){
+        padding-top: 50px;
+        }
 .services-container {
     background-color: $secundary-color;
     margin: 0px auto;
-    height: 930px;
+    padding-bottom: 70px;
+    @media (max-width: 450px){
+        padding-bottom: 20px;
+    }
+
     .section-wrap {
         display: flex;
         flex-direction: row;
@@ -103,6 +183,10 @@ body {
         flex-wrap: wrap;
         margin: 0px auto;
         padding: 0px 30px 50px;
+        @media (min-width: 1100px){
+            display: flex;
+            padding: 0px 5px;
+            }
         h4 {
             margin-bottom: 0px;
             transition: .4s;
@@ -120,6 +204,25 @@ body {
             overflow: hidden;
             border-radius: 10px;
             transition: .4s;
+            @media (max-width: 1100px){
+                display: flex;
+                width:25%;
+                height: 100%;
+                padding: 8px 20px 20px 50px;
+                }
+            @media (max-width: 750px){
+                display: flex;
+                width: 60%;
+                height: 100%;
+            }
+            @media (max-width: 450px){
+                display: flex;
+                width: 90%;
+                height: 100%;
+                margin: 5% 2%;
+                padding: 5px 15px 15px 35px;
+            }
+
                 &:hover {
             transform:translateY(-7px);   
                 & h4 {   
@@ -131,74 +234,112 @@ body {
                 top: 50px;
                 left: -22px;
                 font-size: 55px;
-
+                }
             }
         }
     }
 }
-}
+
+
+
 .why-container {
     background-color: $main-color;
     margin: 0px auto;
     padding: 90px 80px 0px;
-    height: 800px;
+    height: 100%;
     .card-servieces-second {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         margin: 0px auto;
-        .card-choose{
-        margin: 0px auto;
-        width: 300px;
-        height: 300px;
-        padding: 20px;
-        background-color: #00458f;
-        color: white;
-        border: 1px solid #00458f;
-        border-radius: 7px;
-        text-align: center;
-        color: white;
-        font-size: 20px;
-        font-family: $main-title;
-        font-weight: bolder;
-        &:hover {
-            background-color: $secundary-background;
-            border: 1px solid  $secundary-background;
+        @media (max-width: 999px) {
+            width: 100%;
+            margin: 2%;
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
-        .why-text {
-            color: #d8eafe;
-            font-size: 16px;
-            font-weight: 200;
-            line-height: 22px;
+        .card-choose{
+            margin: 0px auto;
+            width: 300px;
+            height: 300px;
+            padding: 20px;
+            background-color: #00458f;
+            color: white;
+            border: 1px solid #00458f;
+            border-radius: 7px;
+            text-align: center;
+            color: white;
+            font-size: 20px;
+            font-family: $main-title;
+            font-weight: bolder;
+            @media (max-width: 1100px) {
+                width: 75%;
+                margin: 2%;
+                padding: 2%;
+                height: 100%;
             }
-            span {
-                padding-bottom: 5px;
-                border-bottom: 2px solid #00458f;
-                transition: .8s;
-                &:hover {
-                    border-bottom: 2px solid white;
-                }
+            @media (max-width: 999px) {
+                width: 100%;
+                margin: 2%;
+                padding: 2%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
             }
-            a {
-                text-decoration: none;
-                color: white;
-                font-family: $main-title;
-                font-size: 14px;
-                letter-spacing: .8px;
+            &:hover {
+                background-color: $secundary-background;
+                border: 1px solid  $secundary-background;
             }
-            i {
-                font-size: 50px;
-                padding-bottom: 20px;
+            .why-text {
                 color: #d8eafe;
-                padding-top: 10px;
-                .why-text {
+                font-size: 16px;
+                font-weight: 200;
+                line-height: 22px;
+                @media (max-width: 650px) {
+                    font-size: 14px;
+                    line-height: 19px;
+                    }
+                }
+                span {
+                    padding-bottom: 5px;
+                    border-bottom: 2px solid #00458f;
+                    transition: .8s;
+                    &:hover {
+                        border-bottom: 2px solid white;
+                        @media (max-width: 999px) {
+                            border: 10%;
+                
+                        }
+                    }
+                }
+                a {
+                    text-decoration: none;
+                    color: white;
+                    font-family: $main-title;
+                    font-size: 14px;
+                    letter-spacing: .8px;
+                }
+                i {
+                    font-size: 50px;
+                    padding-bottom: 20px;
                     color: #d8eafe;
-                    font-size: 40px;
+                    padding-top: 10px;
+                    @media (max-width: 650px) {
+                        font-size: 40px;
+                        padding-bottom: 15px;
+
+                        }
+                    .why-text {
+                        color: #d8eafe;
+                        font-size: 40px;
+                    }
                 }
             }
         }
     }
-}
 
 #portfolio {
     padding-top: 90px;
@@ -215,7 +356,6 @@ body {
                 width: 330px;
                 height: 230px;  
                 background-color: $secundary-background;
-                color: white;
                 position: absolute;
                 top: 15px;
                 left: 15px;
@@ -224,13 +364,14 @@ body {
                 margin: 0px auto;
                 text-align: center;
                 font-family: $main-title;
-                display: none;
+ 
                 h4 {
-                    opacity: 1;
+                    opacity: 100%;
                     font-size: 20px;
                     margin-top: 50px;
                     margin-bottom: 0px;
-                    font-weight: bolder;   
+                    font-weight: bolder;  
+                    color: rgb(255, 255, 255);  
                 }
                 .portfolio-icon{
                     display: flex;
@@ -238,9 +379,10 @@ body {
                     justify-content: center;
                     font-size: 30px;
                     margin: 0px auto;
-                    color: white;     
+                    color: rgb(255, 255, 255);     
                     i{
                         padding: 0px 10px;
+                        color: rgb(255, 255, 255); 
                     }     
                 }
             }
