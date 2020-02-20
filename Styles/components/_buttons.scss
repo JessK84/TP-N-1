@@ -216,6 +216,7 @@
 }
 .newsletter-footer {
     position: relative;
+    padding-bottom: 30px;
     .input-footer {
         border: none;
         height: 32px;
@@ -223,7 +224,31 @@
         position: absolute;
         top: 235px;
         left: 0px;
+        float: left;
+        @media (max-width: 1100px) {
+            display: flex;
+            flex-direction: row;
+            justify-content: left;
+            top: 280px;
+            width: 180px;
+        }
+        @media (max-width: 900px) {
+            display: flex;
+            flex-direction: row;
+            justify-content: left;
+            top: 160px;
+            width: 180px;
+        }
+        @media (max-width: 500px) {
+            top: 180px;
+            width: 160px;
+        }
+        @media (max-width: 380px) {
+            top: 230px;
+
+        }
     }
+    
     .btn-footer {
         width: 100px;
         height: 34px;
@@ -234,8 +259,32 @@
         position: absolute;
         top: 235px;
         left: 200px;
+        @media (max-width: 1100px) {
+            display: flex;
+            flex-direction: row;
+            justify-content: left;
+            top: 280px;
+            width: 90px;
+            left: 180px;
+        }
+        @media (max-width: 900px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        top: 160px;
+        width: 90px;
+        left: 180px;
+        }
+        @media (max-width: 500px) {
+            top: 180px;
+            width: 80px;
+            left: 160px;
+        }
+        @media (max-width: 380px) {
+            top: 230px;
+        }
+       }
     }
-}
 .social-media{      
     display: flex;
     flex-direction: row;   
