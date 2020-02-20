@@ -12,7 +12,7 @@
     right: -3px;
     z-index: 30;
     padding: 15px;
-    @media (max-width: 500px){
+    @media (max-width: 1000px){
        height: 30px;
 
   }
@@ -24,7 +24,7 @@
         padding-left: 90px;
         padding-top: 10px;
         padding-right: 105px;
-        @media (max-width: 500px){
+        @media (max-width: 1000px){
             width: 65px;
             padding-left: 25px;
             padding-top: 2px;
@@ -34,60 +34,7 @@
     }
  }
 
-.container-nav {
-    max-width: 999px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding-right: 105px;
-    text-decoration: none;
-    @media (max-width: 1000px){
-        display: none;
-    }
-    #home {
-        color: $nav-color
-    } 
-    .nav-link {
-        padding-left: 35px; 
-        font-family: $main-text;
-        font-weight: 500;
-        font-size: 14px;
-        color: $secundary-background;
-        position: relative;
-        list-style: none;
-        cursor: pointer;  
-        a {
-            text-decoration: none;
-            color: $secundary-background; 
-        &:hover  {
-            color: $nav-color;
-            }
-        } 
-    }
-}
 
-.subcontainer-nav {
-    margin: 30px;
-    right: 110px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;  
-    list-style: none;
-    position: absolute;  
-    padding: 15px 80px 15px 15px;   
-    background-color: white;  
-    line-height: 40px;
-    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-    transition: ease all 0.3s;
-    display: none;
-        .sub-nav {
-        font-family: $main-text;
-        font-weight: 500;
-        font-size: 14px;
-        color: $secundary-background;       
-        position: relative;
-    }
-}
 
 
 

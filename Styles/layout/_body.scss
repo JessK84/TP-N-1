@@ -1,6 +1,8 @@
 html,
 body {
     margin: 0px auto;
+    min-width: 100%;
+    max-width: 100%;
 }
 
 .home-container {
@@ -13,16 +15,14 @@ body {
     justify-content: space-between;
     background-color: $background;
         @media (max-width:1100px) {
-            & {
-                display: flex;
-                flex-direction: column-reverse;
-                justify-content: center;
-                text-align: center;
-                margin: 0px auto;
-                padding: 50px 5px 40px;
-            }
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            text-align: center;
+            margin: 0px auto;
+            padding: 50px 5px 40px;
         }
-        @media (max-width: 700px) {
+        @media (max-width: 1000px) {
                 & {
                     top:-10px;
                     display: flex;
@@ -36,16 +36,14 @@ body {
                 padding-top: 30px;
                 width: 560px;
                 @media (max-width:1100px) {
-                    & {
-                        display: flex;
-                        flex-direction: column-reverse;
-                        justify-content: center;
-                        text-align: center;
-                        width: 90%;
-                        padding: 5px;
+                    margin: 0 auto;
+                    display: flex;
+                    flex-direction: column-reverse;
+                    justify-content: center;
+                    text-align: center;
+                    width: 85%;
+
                     }
-                    
-                }
             }
         }
     .home-section {
@@ -80,8 +78,8 @@ body {
     }
 } 
 #about-us {
-    padding-top: 90px;
-    @media (max-width: 9000px) {
+    padding-top: 55px;
+    @media (max-width: 900px) {
         padding-top: 30px;
     }
     .about-container {
@@ -135,7 +133,7 @@ body {
             }
             .about-text {
                 h4 {
-                    margin-bottom: 5px;
+                    margin-bottom: 0px;
                 }
                 p {
                     margin-top: 0px;
@@ -147,7 +145,7 @@ body {
             .img-home {
                 width: 550px;
                 margin: 0px 15px;
-                padding-top: 45px;
+                padding-top: 0px;
                 @media (max-width: 1100px){
                     padding-top: 15px;
                     display: flex;
@@ -169,7 +167,7 @@ body {
 
 
 #services {
-    padding-top: 90px;
+    padding-top: 55px;
     background-color: $secundary-color;
     @media (max-width: 1100px){
         padding-top: 50px;
@@ -345,7 +343,7 @@ body {
     }
 
 #portfolio {
-    padding-top: 45px;
+    padding-top: 60px;
     @media (max-width: 500px) {
         padding-top: 30px;
         margin-bottom: 30px;
@@ -401,6 +399,7 @@ body {
                     font-weight: 100;
                 }
                 .portfolio-icon{
+                    margin: 0 auto;
                     display: flex;
                     flex-direction: row;
                     justify-content: center;
@@ -447,7 +446,7 @@ body {
 
 
 #team {
-    padding-top: 40px;
+    padding-top: 60px;
     padding-bottom: 5px;
 .team-contanier {
     margin: 0px auto 80px;
@@ -456,28 +455,85 @@ body {
     flex-direction: row;
     justify-content: space-around;
     margin: 0px 60px;
+    position: relative;
     @media (max-width: 1100px) {
     flex-wrap: wrap;
     margin: 30px auto;
     }
-    .img-team {
+    .team-information {
+        position: absolute;
+        top: 400px;
+        left: 18px;
         width: 250px;
         height: 250px;
         border-radius: 50%;
-        @media (max-width: 1100px) {
-            flex-wrap: wrap;
-            margin: 10px;          
-                }
-        @media (max-width: 300px) {
-            width: 90%;
-            height: 90%;
-            flex-wrap: wrap;
-            margin: 10px;
-                }
+        background-color:  rgba(0, 66, 138, 0.6);
+        color: rgba(255, 255, 255, 1);
+        font-family: $main-text;   
+        display: none;
+        cursor: pointer;
+        overflow: hidden;
+  
+    }
+    .team-member {
+        margin: 0px auto;
+        text-align: center;
+        padding: 65px 0 0;
+        h4 {
+            font-size: $main-title;
+            padding-bottom: 0px;
+            margin-bottom: 0px;
+            letter-spacing: 1.4px;
+            font-weight: 900;
+        }
+        p {
+            padding-top: 0px;
+            margin-top: 0px;
+            font-size: 13px;
+            font-style: italic;
+        }
+    }
+    .team-social-icon {
+        margin: 0 auto;
+        padding: 5px 70px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        text-align: center;
+        cursor: pointer;
+        i:hover {
+            color: $nav-color;
             }
+    }
+    .img-team {
+        margin: 8px auto;
+        position: relative;
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        overflow: hidden;  
+        cursor: pointer;  
+    }
+        &:hover .team-information {
+            display: block;
+            transform: translateY(-400px);
+        }    
+            @media (max-width: 1100px) {
+                flex-wrap: wrap;
+                margin: 10px;          
+                    }
+            @media (max-width: 300px) {
+                width: 90%;
+                height: 90%;
+                flex-wrap: wrap;
+                margin: 10px; 
+             }
         }
     }
 }
+
+
+
 .client-container{
     margin: 0px auto;
     background-color: $secundary-color;
@@ -537,7 +593,7 @@ body {
     }
 }
 #contact-us {
-    padding-top: 90px;
+    padding-top: 55px;
     @media (max-width: 1100px) {
         padding-top: 35px;
         padding-bottom: 0px;
