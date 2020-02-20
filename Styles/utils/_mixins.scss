@@ -6,13 +6,19 @@
     font-weight: 400;
     position: relative;
     margin: 0px auto;
-    padding: 0px 10px 0px;
+    padding: 25px 10px 0px;
     color: $letter-title-color;   
     @media (max-width: 990px){
         display: flex;
         justify-content: center;
         text-align: center;
-        padding: 0px 6px 0px;
+        padding: 25px 6px 0px;
+        font-size: 32px;
+    }
+    @media (max-width: 500px){
+        display: flex;
+        flex-grow: 1;
+        padding: 0px;
         font-size: 32px;
     }
 }
@@ -30,6 +36,7 @@
     letter-spacing: 0.8px;   
     @media (max-width: 990px){
         display: flex;
+        flex-grow: 1;
         justify-content: center;
         text-align: center;
         width: 95%;
