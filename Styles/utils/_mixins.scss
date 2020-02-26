@@ -90,12 +90,13 @@
 .home-button {
     @include button(#1445B3);
     color: #ECF5FF;
-     &#btn-services {
+     &#btn-services, 
+     a {
         background-color: $background;
-        border: 2px solid $secundary-color;
+        text-decoration: none;
         color: $secundary-color;
         transition: .3s all;
-         &:hover {
+        &:hover {
             background-color: $nav-color;
             border: 2px solid $nav-color;
             color: $secundary-color;

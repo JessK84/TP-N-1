@@ -23,10 +23,16 @@
                 <li class="nav-link"><a href="#services">Services</a> </li>
                 <li class="nav-link"><a href="#portfolio">Portfolio</a> </li>
                 <li class="nav-link"><a href="#team">Team</a> </li>
-                <li class="nav-link">Drop Down <i class="fas fa-sort-down"></i></li>
+                <li class="nav-link">Drop Down <i class="fas fa-chevron-down"></i></li>
                     <ul class="subcontainer-nav">
                         <li class="sub-nav">Drop Down 1</li>
-                        <li class="sub-nav">Drop Down 2</li>
+                        <li class="sub-nav">Drop Down 2<i class="fas fa-chevron-right"></i></li>
+                            <ul class="sub-subcontainer-nav">
+                                <li class="sub-subnav-link">Deep Drop Down</li>
+                                <li class="sub-subnav-link">Deep Drop Down</li>
+                                <li class="sub-subnav-link">Deep Drop Down</li>
+                                <li class="sub-subnav-link">Deep Drop Down</li>
+                            </ul>
                         <li class="sub-nav">Drop Down 3</li>
                         <li class="sub-nav">Drop Down 4</li>
                         <li class="sub-nav">Drop Down 5</li>
@@ -37,10 +43,9 @@
     </header >
 
    <!-- ==================================================================
-    ==================== MOBILE BUTTON / SIDEBAR HEADER ==================-->
+    ================================  SIDEBAR HEADER  ==================-->
 
-    <button type="button" class="mobile-button"><a href="#abrir" class="opend-bar"><i class="fas fa-bars"></i> </a></button>
-       
+    <button type="button" class="mobile-button"><a href="#abrir" class="opend-bar"><i class="fas fa-bars"></i> </a></button>      
     <aside id="abrir">     
         <a href="#" class="closed-bar" ><i class="fas fa-times"></i></a>   
         <nav class="mobile-nav">
@@ -56,18 +61,14 @@
         </nav>
     </aside>
     
- <!-- ======================================================================
-    ==================== MOBILE BUTTON / SIDEBAR HEADER ==================-->
+ 
+    <!-- =====================================================================
+    =========================    MAIN   ===================================-->
 
-    <!--
-                                    <ul class="sub-subcontainer-nav">
-                                <li class="sub-subnav-link">Deep Drop Down</li>
-                                <li class="sub-subnav-link">Deep Drop Down </li>
-                                <li class="sub-subnav-link">Deep Drop Down</li>
-                                <li class="sub-subnav-link">Deep Drop Down</li>
-                            </ul>
-    -->
     <main id="back">
+    
+    <!-- =====================================================================
+    ============================  HOME   ==================================-->
         <section class="home-container" >
             <div class="home-section">
                 <div class="main-title">
@@ -75,13 +76,15 @@
                 </div>
                 <div class="main-button">
                     <button class="home-button" id="btn-started">Get Started</button>
-                    <button class="home-button" id="btn-services">Our Services</button>
+                    <a href="#services"><button class="home-button" id="btn-services">Our Services</button></a>
                 </div>
             </div>    
             <div class="img-section">
                 <img src="img/intro-img.svg" alt="Ada" class="img-home">
             </div>
         </section>
+    <!-- =====================================================================
+    ============================  ABOUT US   ===============================-->
         <section id="about-us">
             <div class="about-container">
                 <header class="section-title">
@@ -148,6 +151,8 @@
                 </div>
             </div>
         </section>    
+    <!-- =====================================================================
+    =========================== SERVICES  ==================================-->
         <section id="services">
             <div class="services-container" >
                 <header class="section-title">
@@ -188,6 +193,8 @@
                 </div>
             </section>
         </section>
+    <!-- =====================================================================
+    ============================  WHY US  ==================================-->
         <section class="why-container">
             <header class="section-title ">   
                 <h2 class="title">Why choose us?</h2>
@@ -232,6 +239,8 @@
                 </div>    
             </div>    
         </section>
+    <!-- =====================================================================
+    =========================== OUR PORTFOLIO  =============================-->
         <section id="portfolio">
             <div class="portfolio-container">
                 <header class="section-title">
@@ -346,6 +355,8 @@
                 </div>
             </div>    
         </section>
+    <!-- =====================================================================
+    ===========================  TESTIMONIAL   =============================-->
         <section class="testimonial-container">
             <header class="section-title">
                 <h2 class="title">Testimonials</h2>
@@ -418,6 +429,8 @@
                 <button class="btn-four"></button>
             </div>
         </section>
+    <!-- =====================================================================
+    ============================  TEAM   ==================================-->
         <section id="team">
             <div class="team-contanier">
                 <header class="section-title">
@@ -439,11 +452,25 @@
                         </div>
                     </div>
                     <img src="img/team-02.jpg" alt="" class="img-team">
+                    <div class="team-information">  
+                        <div class="team-member">
+                            <h4>Ben Affleck</h4>
+                            <p>Chief Ejecutive Officer</p>
+                        </div>                  
+                        <div class="team-social-icon">
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-google-plus-g"></i>
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                    </div>
                     <img src="img/team-03.jpg" alt="" class="img-team">
                     <img src="img/team-04.jpg" alt="" class="img-team">
                 </div>
             </div>    
         </section>
+    <!-- =====================================================================
+    ============================  CLIENT   =================================-->
         <section class="client-container">
             <header class="section-title">
                 <h2 class="title">Our Clients</h2>
@@ -476,6 +503,8 @@
                 </div>
             </div>
         </section>
+    <!-- =====================================================================
+    ============================  CONTACT   ================================-->
         <section id="contact-us">
             <div class="contact-container">
                 <header class="section-title">
@@ -518,8 +547,7 @@
     <!-- ==================================================================
     =========================BACK BUTTON==================================-->
     <button type="button" class="btn-to-back"><a href="#back"><i class="fas fa-angle-up"></i></a> </button>
-    <!-- ==================================================================
-    =========================BACK BUTTON==================================-->
+   
 
     <!-- =====================================================================
     =========================    FOOTER   ==================================-->
