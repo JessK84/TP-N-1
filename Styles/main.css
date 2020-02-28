@@ -134,7 +134,8 @@
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
   text-align: left;
-  padding: 15px 10px 15px; }
+  padding: 15px 10px 15px;
+  cursor: pointer; }
   .card-services h4 {
     font-family: "Montserrat", sans-serif;
     font-size: 18px;
@@ -146,37 +147,37 @@
     font-size: 48px;
     width: 5px;
     opacity: 0.5px;
-    color: #f8d0ff; }
+    color: #699179; }
   .card-services:nth-child(n+2) i {
     font-size: 48px;
     width: 5px;
     opacity: 0.5px;
-    color: #219318; }
+    color: #0cb54d; }
   .card-services:nth-child(n+3) i {
     font-size: 48px;
     width: 5px;
     opacity: 0.5px;
-    color: #1faccc; }
+    color: #1e77ff; }
   .card-services:nth-child(n+4) i {
     font-size: 48px;
     width: 5px;
     opacity: 0.5px;
-    color: #dc4c5f; }
+    color: #10771e; }
   .card-services:nth-child(n+5) i {
     font-size: 48px;
     width: 5px;
     opacity: 0.5px;
-    color: #8784a3; }
+    color: #ae6937; }
   .card-services:nth-child(n+6) i {
     font-size: 48px;
     width: 5px;
     opacity: 0.5px;
-    color: #bc3447; }
+    color: #d44d8d; }
   .card-services:nth-child(n+7) i {
     font-size: 48px;
     width: 5px;
     opacity: 0.5px;
-    color: #c9ec3e; }
+    color: #34b5f1; }
 
 .main-button {
   display: flex;
@@ -204,7 +205,8 @@
     font-weight: bold;
     font-size: 15px;
     letter-spacing: 2px;
-    padding: 10px; }
+    padding: 10px;
+    cursor: pointer; }
     @media (max-width: 450px) {
       .main-button .home-button {
         justify-content: center;
@@ -215,7 +217,8 @@
       background-color: #007bff;
       border: 1px solid #007bff;
       color: #ecf5ff;
-      transition: .3s all; }
+      transition: .3s all;
+      cursor: pointer; }
       .main-button .home-button#btn-started:hover {
         background-color: #1445b3;
         border: 2px solid #ecf5ff; }
@@ -232,7 +235,8 @@
     padding-left: 25px;
     position: relative;
     margin: 20px 15px;
-    border: 2px solid #007bff; }
+    border: 2px solid #007bff;
+    cursor: pointer; }
     .about-description button i {
       font-size: 26px;
       position: absolute;
@@ -341,7 +345,8 @@
   color: white;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  cursor: pointer; }
   @media (max-width: 1100px) {
     .btn-message {
       margin: 0px auto 30px;
@@ -434,7 +439,8 @@
     background-color: #007bff;
     position: relative;
     bottom: -30px;
-    left: -10px; }
+    left: -10px;
+    cursor: pointer; }
     .social-media button:hover {
       background-color: #046bda;
       border: 1px solid #046bda; }
@@ -887,7 +893,8 @@ body {
         margin: 15px;
         overflow: hidden;
         position: relative;
-        transition: .8s; }
+        transition: .8s;
+        cursor: pointer; }
         @media (max-width: 1100px) {
           #portfolio .portfolio-container .wrap-portfolio .img-portfolio {
             display: flex;
@@ -907,7 +914,9 @@ body {
   padding-top: 60px;
   padding-bottom: 5px; }
   #team .team-contanier {
-    margin: 0px auto 80px; }
+    margin: 0px auto 80px;
+    color: white;
+    font-family: "Open Sans", sans-serif; }
     #team .team-contanier .team {
       display: flex;
       flex-direction: row;
@@ -918,44 +927,6 @@ body {
         #team .team-contanier .team {
           flex-wrap: wrap;
           margin: 30px auto; } }
-      #team .team-contanier .team .team-information {
-        position: absolute;
-        top: 400px;
-        left: 18px;
-        width: 250px;
-        height: 250px;
-        border-radius: 50%;
-        background-color: rgba(0, 66, 138, 0.6);
-        color: white;
-        font-family: "Open Sans", sans-serif;
-        display: none;
-        cursor: pointer;
-        overflow: hidden; }
-      #team .team-contanier .team .team-member {
-        margin: 0px auto;
-        text-align: center;
-        padding: 65px 0 0; }
-        #team .team-contanier .team .team-member h4 {
-          font-size: "Montserrat", sans-serif;
-          padding-bottom: 0px;
-          margin-bottom: 0px;
-          letter-spacing: 1.4px;
-          font-weight: 900; }
-        #team .team-contanier .team .team-member p {
-          padding-top: 0px;
-          margin-top: 0px;
-          font-size: 13px;
-          font-style: italic; }
-      #team .team-contanier .team .team-social-icon {
-        margin: 0 auto;
-        padding: 5px 70px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        text-align: center;
-        cursor: pointer; }
-        #team .team-contanier .team .team-social-icon i:hover {
-          color: #007bff; }
       #team .team-contanier .team .img-team {
         margin: 8px auto;
         position: relative;
@@ -963,10 +934,50 @@ body {
         height: 250px;
         border-radius: 50%;
         overflow: hidden;
-        cursor: pointer; }
-      #team .team-contanier .team:hover .team-information {
-        display: block;
-        transform: translateY(-400px); }
+        cursor: pointer;
+        transition: .6s all; }
+        #team .team-contanier .team .img-team img {
+          width: 100%; }
+        #team .team-contanier .team .img-team:hover .team-information {
+          display: block;
+          transform: translateY(-270px);
+          transition: .4s all;
+          background-color: rgba(0, 66, 138, 0.6); }
+          #team .team-contanier .team .img-team:hover .team-information .team-information {
+            position: absolute;
+            top: 0px;
+            display: none;
+            cursor: pointer;
+            overflow: hidden;
+            color: white; }
+          #team .team-contanier .team .img-team:hover .team-information .team-social-icon {
+            position: absolute;
+            top: 160px;
+            left: 83px;
+            transition: .4s all;
+            color: white;
+            cursor: pointer; }
+            #team .team-contanier .team .img-team:hover .team-information .team-social-icon i:hover {
+              color: #007bff; }
+          #team .team-contanier .team .img-team:hover .team-information .team-member {
+            margin: 0px auto;
+            text-align: center;
+            padding: 65px 0 0;
+            width: 250px;
+            height: 270px; }
+            #team .team-contanier .team .img-team:hover .team-information .team-member h4 {
+              font-size: "Montserrat", sans-serif;
+              padding-bottom: 0px;
+              margin-bottom: 0px;
+              letter-spacing: 1.4px;
+              font-weight: 900;
+              transition: .4s all; }
+            #team .team-contanier .team .img-team:hover .team-information .team-member p {
+              padding-top: 0px;
+              margin-top: 0px;
+              font-size: 13px;
+              font-style: italic;
+              transition: .4s all; }
       @media (max-width: 1100px) {
         #team .team-contanier .team {
           flex-wrap: wrap;
@@ -1005,7 +1016,8 @@ body {
       width: 250px;
       height: 100px;
       background-color: white;
-      border: 1px solid #d6eaff; }
+      border: 1px solid #d6eaff;
+      cursor: pointer; }
       @media (max-width: 850px) {
         .client-container .wrap-clients .container-clients {
           width: 100%;

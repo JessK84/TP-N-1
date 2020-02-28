@@ -86,6 +86,7 @@
     font-family: $main-text;
     text-align: left;
     padding: 15px 10px 15px;
+    cursor: pointer;
 }
 .home-button {
     @include button(#1445B3);
