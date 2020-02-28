@@ -1,3 +1,4 @@
+//  SECTION HOME  =================================
 .main-button {
     display: flex;
     flex-direction: row;
@@ -14,7 +15,6 @@
             text-align: center;
             margin: 2% auto;
     }
-
         .home-button {
             width: 180px;
             height: 45px;
@@ -47,7 +47,7 @@
         }
 }
 
- 
+//  SECTION ABOUT-US  =================================
 .about-description {
     display: flex;
     flex-direction: row;
@@ -84,6 +84,7 @@
     }
 }
 
+//  SECTION PORTFOLIO  =================================
 .button-portfolio {
     text-align: center;
     margin: 30px auto 50px;
@@ -147,6 +148,8 @@
         }
     }
 }
+//  SECTION TESTIMONIAL  =================================
+
 .button-testimonial {
     display: flex;
     flex-direction: row;
@@ -189,6 +192,9 @@
           
     }
 }
+
+//  FOOTER ===========================================
+
 .btn-message {
     width: 190px;
     height: 45px;
@@ -212,6 +218,8 @@
         border: 1px solid #046bda;
     }
 }
+
+
 .newsletter-footer {
     position: relative;
     padding-bottom: 30px;
@@ -314,6 +322,8 @@
     }
 }
 
+
+//  VOLVER AL INICIO  =================================
 .btn-to-back {
     position: fixed;
     background: $nav-color;
@@ -336,6 +346,8 @@
         text-decoration: none;
     }
 }
+
+//  SIDEBAR BUTTON  =================================
 .mobile-button {
     position: fixed;
     top: -5px;
@@ -353,3 +365,4 @@
         right: -25px;
     }
 }
+
