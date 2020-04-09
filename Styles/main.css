@@ -144,37 +144,37 @@
     font-size: 48px;
     width: 5px;
     opacity: 0.5px;
-    color: #8ceb8d; }
+    color: #3f6d5a; }
   .card-services:nth-child(n+2) i {
     font-size: 48px;
     width: 5px;
     opacity: 0.5px;
-    color: #9a95ff; }
+    color: #0f9c9f; }
   .card-services:nth-child(n+3) i {
     font-size: 48px;
     width: 5px;
     opacity: 0.5px;
-    color: #ba1bb2; }
+    color: #2209ae; }
   .card-services:nth-child(n+4) i {
     font-size: 48px;
     width: 5px;
     opacity: 0.5px;
-    color: #c814ff; }
+    color: #c7305b; }
   .card-services:nth-child(n+5) i {
     font-size: 48px;
     width: 5px;
     opacity: 0.5px;
-    color: #41352c; }
+    color: #22760f; }
   .card-services:nth-child(n+6) i {
     font-size: 48px;
     width: 5px;
     opacity: 0.5px;
-    color: #de67e4; }
+    color: #0f89ff; }
   .card-services:nth-child(n+7) i {
     font-size: 48px;
     width: 5px;
     opacity: 0.5px;
-    color: #4286b0; }
+    color: #6638e3; }
 
 .main-button {
   display: flex;
@@ -981,13 +981,7 @@ body {
       @media (max-width: 1100px) {
         #team .team-contanier .team {
           flex-wrap: wrap;
-          margin: 10px; } }
-      @media (max-width: 300px) {
-        #team .team-contanier .team {
-          width: 90%;
-          height: 90%;
-          flex-wrap: wrap;
-          margin: 10px; } }
+          margin: 3% 0%; } }
 
 .client-container {
   margin: 0px auto;
